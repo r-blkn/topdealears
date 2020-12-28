@@ -2,12 +2,42 @@ let header__burger = document.querySelector('.header__burger');
 let header_menu = document.querySelector('.header__nav');
 let back = document.querySelector('body');
 
+const contactsBtnMobile = document.querySelector('.contacts__btn');
+const contactsBtnPc = document.querySelector('.contacts-pc__btn');
+
+const headerLinks = document.querySelectorAll('.header__link');
+
+
 
 header__burger.onclick = function(){
-    header__burger.classList.toggle('active');
-	 header_menu.classList.toggle('active');
-    back.classList.toggle('lock');
+  header__burger.classList.toggle('active');
+  header_menu.classList.toggle('active');
+  back.classList.toggle('lock');
 }
+
+function openContactsModal(e) {
+  let path = e.currentTarget.getAttribute('data-path');
+  if(document.documentElement.clientWidth <= 767) {
+    header__burger.classList.toggle('active');
+    header_menu.classList.toggle('active');
+    back.classList.toggle('lock');
+  
+    contactsModal.style.visibility = 'visible';
+    contactsModal.style.opacity = 1;
+
+    closeModal(path);
+  } else {
+    contactsModal.style.visibility = 'visible';
+    contactsModal.style.opacity = 1;
+
+    closeModal(path);
+  }
+  
+
+}
+
+contactsBtnMobile.addEventListener('click', openContactsModal);
+contactsBtnPc.addEventListener('click', openContactsModal);
 
 
 new Swiper('.detailing-slider', {

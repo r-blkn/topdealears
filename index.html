@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="uk">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortcut icon" href="images/Logo.ico" type="image/x-icon">
 	<link rel="stylesheet" href="css/swiper.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 	<link rel="stylesheet" href="css/style.css">
 	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
+
 	<title>Top Dealers</title>
 </head>
+
 <body>
 	<header class="header">
 		<div class="container">
@@ -17,8 +21,8 @@
 					<img src="images/Logo.webp" alt="Top Dealers">
 				</div>
 				<div class="header__right">
-					<a href="#" class="header__link">про компанію</a>
-					<a href="#" class="header__link">контакти</a>
+					<a href="#video" class="header__link">про компанію</a>
+					<a href="#" class="header__link contacts-pc__btn" data-path="contacts">контакти</a>
 					<a href="tel:+380933303055" class="header__link">+380933303055</a>
 					<a href="tel:+380933306006" class="header__link">+380933306006</a>
 				</div>
@@ -30,35 +34,35 @@
 		</div>
 		<div class="header__bottom bottom-header">
 			<div class="bottom-header__wrapper">
-				<a href="#" class="header__link">DETAILING</a>
-				<a href="#" class="header__link">CAR  SHOWROOM</a>
-				<a href="#" class="header__link">CHIP TUNING</a>
+				<a href="#detailing" class="header__link">DETAILING</a>
+				<a href="#carshowroom" class="header__link">CAR SHOWROOM</a>
+				<a href="#chip" class="header__link">CHIP TUNING</a>
 			</div>
 		</div>
 		<nav class="header__nav">
 			<ul class="header__list">
-				<li>
+				<!-- <li>
 					<a class="header__link" href="#">UA</a>
 					<span>/</span>
 					<a class="header__link inactive" href="#">RU</a>
+				</li> -->
+				<li>
+					<a class="header__link" href="#video">ПРО КОМПАНІЮ</a>
 				</li>
 				<li>
-					<a class="header__link" href="#">ПРО КОМПАНІЮ</a>
+					<a class="header__link" href="#detailing">DETAILING</a>
 				</li>
 				<li>
-					<a class="header__link" href="#">DETAILING</a>
+					<a class="header__link" href="#carshowroom">CAR SHOWROOM</a>
 				</li>
 				<li>
-					<a class="header__link" href="#">CAR SHOWROOM</a>
+					<a class="header__link" href="#detailing">МИТНИЙ КАЛЬКУЛЯТОР</a>
 				</li>
 				<li>
-					<a class="header__link" href="#">МИТНИЙ КАЛЬКУЛЯТОР</a>
+					<a class="header__link" href="#chip">CHIP TUNING</a>
 				</li>
 				<li>
-					<a class="header__link" href="#">CHIP TUNING</a>
-				</li>
-				<li>
-					<a class="header__link" href="#">КОНТАКТИ</a>
+					<a class="header__link contacts__btn" data-path="contacts" href="#">КОНТАКТИ</a>
 				</li>
 				<li>
 					<a class="header__link" href="tel:+380933303055">+380933303055</a>
@@ -68,17 +72,23 @@
 	</header>
 	<main class="main">
 		<div class="video">
-			<video class="lozad" src="images/video/afterBF.webm"  preload="none" autoplay muted loop></video>
+			<video class="lozad" src="images/video/afterBF.webm" preload="none" autoplay muted loop></video>
 		</div>
-		<section class="detailing">
+		<section class="detailing" id="detailing">
 			<div class="block-container">
 				<h2 class="block-title1">DETAILING</h2>
 				<div class="detailing__text block-text-wh">
 					<p>
-						Детейлінг це – комплекс заходів для відновлення та захисту зовнішнього та внутрішнього вигляду автомобіля максимально наближених до заводських. Таких як: полірування кузова, знежирення кузова, очищення спеціальною глиною, відновлювальне і захисне покриття кузова, полірування передньої оптики і задніх ліхтарів, миття та полірування колісних дисків, хімчистка салону, прибирання багажного простору, миття моторного відсіку, а також нанесення на поверхню кузова прогресивних захисних покриттів (Nano-кераміка, віск).Власнику флаєра -20% знижка на комплекси по догляду за автомобілем.
+						Детейлінг це – комплекс заходів для відновлення та захисту зовнішнього та внутрішнього вигляду
+						автомобіля максимально наближених до заводських. Таких як: полірування кузова, знежирення
+						кузова, очищення спеціальною глиною, відновлювальне і захисне покриття кузова, полірування
+						передньої оптики і задніх ліхтарів, миття та полірування колісних дисків, хімчистка салону,
+						прибирання багажного простору, миття моторного відсіку, а також нанесення на поверхню кузова
+						прогресивних захисних покриттів (Nano-кераміка, віск).Власнику флаєра -20% знижка на комплекси
+						по догляду за автомобілем.
 					</p>
 				</div>
-			<h3 class="block-title2">BEFOR&AFTER</h3>
+				<h3 class="block-title2">BEFOR&AFTER</h3>
 			</div>
 			<div class="slider">
 				<div class="detailing-slider swiper-container">
@@ -102,7 +112,7 @@
 							Екстер`єр <br>
 							Базова мийка авто
 							Миття дисків без зняття спецзасобом
-							3-и фазне  полірування  кузова автомобіля 
+							3-и фазне полірування кузова автомобіля
 							Полірування оптики авто зад\перед
 							Полірування під ручками
 							Чистка від полірувальної пасти: шилдиків, парктроніків, резинових ущільнювачів,
@@ -110,11 +120,13 @@
 						</p>
 						<p>
 							Інтерєр <br>
-							Хімчистка салону авто: тканини, шкіри, стелі, килимового покриття торнадором (миючим пилососом) <br>
+							Хімчистка салону авто: тканини, шкіри, стелі, килимового покриття торнадором (миючим
+							пилососом) <br>
 							Чистка дверних карт
 							Чистка резинових ущільнювачів та дверних проємів
-							Чистка задньої панелі 
-							Витирання вікон, люка, дзеркал: в сонцезахисних козирках, заднього виду (внутрішнє, зовнішнє)
+							Чистка задньої панелі
+							Витирання вікон, люка, дзеркал: в сонцезахисних козирках, заднього виду (внутрішнє,
+							зовнішнє)
 						</p>
 						<p>
 							Фінішні роботи: <br>
@@ -128,8 +140,10 @@
 						<span></span>
 					</div>
 					<div class="price__buttons">
-						<button class="block-btn standart__btn" type="button">ДІЗНАТИСЬ ЦІНУ</button>
-						<button class="block-btn standart__btn" type="button">ЗАПИСАТИСЬ</button>
+						<button class="block-btn standart__btn find-price__btn" data-path="standart"
+							type="button">ДІЗНАТИСЬ ЦІНУ</button>
+						<button class="block-btn standart__btn check-in__btn" data-path="standart"
+							type="button">ЗАПИСАТИСЬ</button>
 					</div>
 				</div>
 				<div class="premium">
@@ -139,7 +153,7 @@
 							Екстер`єр <br>
 							Базова мийка авто
 							Миття дисків без зняття спецзасобом
-							3-и фазне  полірування  кузова автомобіля 
+							3-и фазне полірування кузова автомобіля
 							Полірування оптики авто зад\перед
 							Полірування під ручками
 							Чистка від полірувальної пасти: шилдиків, парктроніків, резинових ущільнювачів,
@@ -147,11 +161,13 @@
 						</p>
 						<p>
 							Інтерєр <br>
-							Хімчистка салону авто: тканини, шкіри, стелі, килимового покриття торнадором (миючим пилососом) <br>
+							Хімчистка салону авто: тканини, шкіри, стелі, килимового покриття торнадором (миючим
+							пилососом) <br>
 							Чистка дверних карт
 							Чистка резинових ущільнювачів та дверних проємів
-							Чистка задньої панелі 
-							Витирання вікон, люка, дзеркал: в сонцезахисних козирках, заднього виду (внутрішнє, зовнішнє)
+							Чистка задньої панелі
+							Витирання вікон, люка, дзеркал: в сонцезахисних козирках, заднього виду (внутрішнє,
+							зовнішнє)
 						</p>
 						<p>
 							Фінішні роботи: <br>
@@ -165,8 +181,10 @@
 						<span></span>
 					</div>
 					<div class="price__buttons">
-						<button class="block-btn premium__btn" type="button">ДІЗНАТИСЬ ЦІНУ</button>
-						<button class="block-btn premium__btn" type="button">ЗАПИСАТИСЬ</button>
+						<button class="block-btn premium__btn find-price__btn" data-path="premium"
+							type="button">ДІЗНАТИСЬ ЦІНУ</button>
+						<button class="block-btn premium__btn check-in__btn" data-path="premium"
+							type="button">ЗАПИСАТИСЬ</button>
 					</div>
 				</div>
 			</div>
@@ -180,7 +198,7 @@
 							Екстер`єр <br>
 							Базова мийка авто
 							Миття дисків без зняття спецзасобом
-							3-и фазне  полірування  кузова автомобіля 
+							3-и фазне полірування кузова автомобіля
 							Полірування оптики авто зад\перед
 							Полірування під ручками
 							Чистка від полірувальної пасти: шилдиків, парктроніків, резинових ущільнювачів,
@@ -188,11 +206,13 @@
 						</p>
 						<p>
 							Інтерєр <br>
-							Хімчистка салону авто: тканини, шкіри, стелі, килимового покриття торнадором (миючим пилососом) <br>
+							Хімчистка салону авто: тканини, шкіри, стелі, килимового покриття торнадором (миючим
+							пилососом) <br>
 							Чистка дверних карт
 							Чистка резинових ущільнювачів та дверних проємів
-							Чистка задньої панелі 
-							Витирання вікон, люка, дзеркал: в сонцезахисних козирках, заднього виду (внутрішнє, зовнішнє)
+							Чистка задньої панелі
+							Витирання вікон, люка, дзеркал: в сонцезахисних козирках, заднього виду (внутрішнє,
+							зовнішнє)
 						</p>
 						<p>
 							Фінішні роботи: <br>
@@ -206,15 +226,26 @@
 						<span></span>
 					</div>
 					<div class="price__buttons">
-						<button class="block-btn platinum__btn" type="button">ДІЗНАТИСЬ ЦІНУ</button>
-						<button class="block-btn platinum__btn" type="button">ЗАПИСАТИСЬ</button>
+						<button class="block-btn platinum__btn find-price__btn" data-path="platinum"
+							type="button">ДІЗНАТИСЬ ЦІНУ</button>
+						<button class="block-btn platinum__btn check-in__btn" data-path="platinum"
+							type="button">ЗАПИСАТИСЬ</button>
 					</div>
 				</div>
 				<div class="protection">
 					<h3 class="protection__title block-title2">NANO CERAMIC</h3>
 					<div class="protection__text block-text-gr">
 						<p>
-							Керамічний захист кузова довговічніший, надійніший від обробки «рідким склом». За рахунок більш тривалого терміну служби обійдеться в результаті дешевше ніж будь яка інша обробка. При належному догляді захисне покриття може служити кілька років після нанесення. Зняти нанокераміку раніше терміну можна тільки за допомогою полірування,або постійними заїздами в «автоматичні» мийки - там і заводський лак недовго проживе.  Ефект «Антидощ» - при нанесенні нанокерамічного складу на лобове скло вода просто не буде встигає затриматися на склі, «двірники» працюватимуть набагато рідше, економлячи ресурс і зберігаючи саме скло від механічних пошкоджень.На задні і бічні вікна машини гідрофобное покриття «антидощ» теж не завадить нанести,видимість в дощову погоду істотно покращиться.Нанокераміка є одною з самих передових і ефективних методів зберегти своє авто в ідеальному стані.
+							Керамічний захист кузова довговічніший, надійніший від обробки «рідким склом». За рахунок
+							більш тривалого терміну служби обійдеться в результаті дешевше ніж будь яка інша обробка.
+							При належному догляді захисне покриття може служити кілька років після нанесення. Зняти
+							нанокераміку раніше терміну можна тільки за допомогою полірування,або постійними заїздами в
+							«автоматичні» мийки - там і заводський лак недовго проживе. Ефект «Антидощ» - при нанесенні
+							нанокерамічного складу на лобове скло вода просто не буде встигає затриматися на склі,
+							«двірники» працюватимуть набагато рідше, економлячи ресурс і зберігаючи саме скло від
+							механічних пошкоджень.На задні і бічні вікна машини гідрофобное покриття «антидощ» теж не
+							завадить нанести,видимість в дощову погоду істотно покращиться.Нанокераміка є одною з самих
+							передових і ефективних методів зберегти своє авто в ідеальному стані.
 						</p>
 					</div>
 					<div class="protection__circle block-circle">
@@ -227,7 +258,13 @@
 					<h3 class="protection__title block-title2">WRAPPING</h3>
 					<div class="protection__text block-text-gr">
 						<p>
-							Захист автомобіля поліуретановою плівкою на сьогоднішній день є найкращим та найефективнішим способом забезпечити цілісність лакофарбового покриття. Окрім бронювання, плівка дозволяє змінити стайлінг автомобіля, завдяки новим кольорам та декоративним дизайнерським рішенням. Досягти більшої приватності або гармонійності зовнішнього вигляду, можна за рахунок тонування вікон вашого авто. Коли в роботі поєднуються професійні навички, висококваліфікований персонал, якісний матеріал та створені найкращі умови для роботи - виходить відмінний результат.
+							Захист автомобіля поліуретановою плівкою на сьогоднішній день є найкращим та найефективнішим
+							способом забезпечити цілісність лакофарбового покриття. Окрім бронювання, плівка дозволяє
+							змінити стайлінг автомобіля, завдяки новим кольорам та декоративним дизайнерським рішенням.
+							Досягти більшої приватності або гармонійності зовнішнього вигляду, можна за рахунок
+							тонування вікон вашого авто. Коли в роботі поєднуються професійні навички,
+							висококваліфікований персонал, якісний матеріал та створені найкращі умови для роботи -
+							виходить відмінний результат.
 						</p>
 					</div>
 					<div class="protection__circle block-circle">
@@ -240,7 +277,8 @@
 					<h3 class="protection__title block-title2">CERTIFICATE</h3>
 					<div class="protection__text block-text-gr">
 						<p>
-							Раді повідомити, що у нас з'явився подарунковий сертифікат на послуги детейлінгу, що значно полегшить Вам вибір подарунка
+							Раді повідомити, що у нас з'явився подарунковий сертифікат на послуги детейлінгу, що значно
+							полегшить Вам вибір подарунка
 						</p>
 					</div>
 					<div class="protection__circle block-circle">
@@ -251,33 +289,40 @@
 				</div>
 			</div>
 		</section>
-		<section class="showroom">
+		<section class="showroom" id="carshowroom">
 			<div class="block-container">
 				<h2 class="showroom__title block-title1">CAR SHOWROOM</h2>
 				<div class="block-text-wh">
 					<p>
-						Автосалон «TOP DEALERS» Ми спеціалізуємся на продажі та купівлі автомобілів преміум сегменту. У нашому каталозі представлені як звичайні серійні автомобілі, так і ексклюзивні та унікальні моделі. Ми точно знаємо, що таке престиж і досконалість. Наш досвід і знання допоможуть підібрати автомобіль, навіть для найпримхливішого клієнта. Консультанти досконало володіють інформацією про технічні характеристики автомобілів Обслуговування клієнтів відбувається на найвищому рівні, враховуючи всі побажання! Всі автомобілі проходять ретельну перевірку технічного стану і юридичної чистоти. Все це дозволить швидко підібрати Ваш майбутній автомобіль, який є відображенням стилю і невід'ємною частиною вашого життя
+						Автосалон «TOP DEALERS» Ми спеціалізуємся на продажі та купівлі автомобілів преміум сегменту. У
+						нашому каталозі представлені як звичайні серійні автомобілі, так і ексклюзивні та унікальні
+						моделі. Ми точно знаємо, що таке престиж і досконалість. Наш досвід і знання допоможуть
+						підібрати автомобіль, навіть для найпримхливішого клієнта. Консультанти досконало володіють
+						інформацією про технічні характеристики автомобілів Обслуговування клієнтів відбувається на
+						найвищому рівні, враховуючи всі побажання! Всі автомобілі проходять ретельну перевірку
+						технічного стану і юридичної чистоти. Все це дозволить швидко підібрати Ваш майбутній
+						автомобіль, який є відображенням стилю і невід'ємною частиною вашого життя
 					</p>
 				</div>
 				<h3 class="block-title2">АКТУАЛЬНІ АВТО</h3>
 			</div>
 			<div class="slider-auto slider ">
-					<div class="showroom-slider swiper-container">
-						<div class="showroom-slider__wrapper swiper-wrapper">
-							<div class="showroom-slider__slide swiper-slide">
-								<img src="images/showroom/showroom-slider/1.webp" alt="">
-							</div>
-							<div class="showroom-slider__slide swiper-slide">
-								<img src="images/showroom/showroom-slider/1.webp" alt="">
-							</div>
+				<div class="showroom-slider swiper-container">
+					<div class="showroom-slider__wrapper swiper-wrapper">
+						<div class="showroom-slider__slide swiper-slide">
+							<img src="images/showroom/showroom-slider/1.webp" alt="">
 						</div>
-						<div class="swiper-button-prev">
-							<img src="images/showroom/showroom-slider/prev.svg" alt="prev">
-						</div>
-						<div class="swiper-button-next">
-							<img src="images/showroom/showroom-slider/next.svg" alt="next">
+						<div class="showroom-slider__slide swiper-slide">
+							<img src="images/showroom/showroom-slider/1.webp" alt="">
 						</div>
 					</div>
+					<div class="swiper-button-prev">
+						<img src="images/showroom/showroom-slider/prev.svg" alt="prev">
+					</div>
+					<div class="swiper-button-next">
+						<img src="images/showroom/showroom-slider/next.svg" alt="next">
+					</div>
+				</div>
 			</div>
 		</section>
 		<section class="service">
@@ -286,7 +331,12 @@
 					<h3 class="service__title block-title2">ПІДБІР</h3>
 					<div class="service__text block-text-gr">
 						<p>
-							Завдяки дилерським аккаунтам та професійним менеджерам, Top Dealers виграє багато лотів за низькими цінами. Доставкою займається наша логістична компанія, яка контролює всі процеси від погрузки і до відкриття контейнера в порті. Ми не делегуємо наші повноваження нікому, а робимо все власноруч і за рахунок цього досягаємо максимально якісного результату. У нашому салоні Ви зможете отримати всі необхідні послуги підбору, доставки, розмитнення та ремонту і навіть застрахувати своє нове авто
+							Завдяки дилерським аккаунтам та професійним менеджерам, Top Dealers виграє багато лотів за
+							низькими цінами. Доставкою займається наша логістична компанія, яка контролює всі процеси
+							від погрузки і до відкриття контейнера в порті. Ми не делегуємо наші повноваження нікому, а
+							робимо все власноруч і за рахунок цього досягаємо максимально якісного результату. У нашому
+							салоні Ви зможете отримати всі необхідні послуги підбору, доставки, розмитнення та ремонту і
+							навіть застрахувати своє нове авто
 						</p>
 					</div>
 					<div class="block-circle">
@@ -295,14 +345,20 @@
 						<span></span>
 					</div>
 					<div class="service__buttons">
-						<button class="block-btn service__btn" type="button">ЗАПИСАТИСЬ</button>
+						<button class="block-btn service__btn selection__btn" data-path="selection"
+							type="button">ПІДІБРАТИ АВТО</button>
 					</div>
 				</div>
 				<div class="trade-in">
 					<h3 class="service__title block-title2">TRADE IN</h3>
 					<div class="service__text block-text-gr">
 						<p>
-							Завдяки дилерським аккаунтам та професійним менеджерам, Top Dealers виграє багато лотів за низькими цінами. Доставкою займається наша логістична компанія, яка контролює всі процеси від погрузки і до відкриття контейнера в порті. Ми не делегуємо наші повноваження нікому, а робимо все власноруч і за рахунок цього досягаємо максимально якісного результату. У нашому салоні Ви зможете отримати всі необхідні послуги підбору, доставки, розмитнення та ремонту і навіть застрахувати своє нове авто
+							Завдяки дилерським аккаунтам та професійним менеджерам, Top Dealers виграє багато лотів за
+							низькими цінами. Доставкою займається наша логістична компанія, яка контролює всі процеси
+							від погрузки і до відкриття контейнера в порті. Ми не делегуємо наші повноваження нікому, а
+							робимо все власноруч і за рахунок цього досягаємо максимально якісного результату. У нашому
+							салоні Ви зможете отримати всі необхідні послуги підбору, доставки, розмитнення та ремонту і
+							навіть застрахувати своє нове авто
 						</p>
 					</div>
 					<div class="block-circle">
@@ -311,14 +367,20 @@
 						<span></span>
 					</div>
 					<div class="service__buttons">
-						<button class="block-btn service__btn" type="button">ЗАПИСАТИСЬ</button>
+						<button class="block-btn service__btn trade-in__btn" data-path="trade-in"
+							type="button">ЗДІЙСНИТИ ОБМІН НА</button>
 					</div>
 				</div>
 				<div class="car-purchase">
 					<h3 class="service__title block-title2">АВТОВИКУП</h3>
 					<div class="service__text block-text-gr">
 						<p>
-							Завдяки дилерським аккаунтам та професійним менеджерам, Top Dealers виграє багато лотів за низькими цінами. Доставкою займається наша логістична компанія, яка контролює всі процеси від погрузки і до відкриття контейнера в порті. Ми не делегуємо наші повноваження нікому, а робимо все власноруч і за рахунок цього досягаємо максимально якісного результату. У нашому салоні Ви зможете отримати всі необхідні послуги підбору, доставки, розмитнення та ремонту і навіть застрахувати своє нове авто
+							Завдяки дилерським аккаунтам та професійним менеджерам, Top Dealers виграє багато лотів за
+							низькими цінами. Доставкою займається наша логістична компанія, яка контролює всі процеси
+							від погрузки і до відкриття контейнера в порті. Ми не делегуємо наші повноваження нікому, а
+							робимо все власноруч і за рахунок цього досягаємо максимально якісного результату. У нашому
+							салоні Ви зможете отримати всі необхідні послуги підбору, доставки, розмитнення та ремонту і
+							навіть застрахувати своє нове авто
 						</p>
 					</div>
 					<div class="block-circle">
@@ -327,53 +389,288 @@
 						<span></span>
 					</div>
 					<div class="service__buttons">
-						<button class="block-btn service__btn" type="button">ЗАПИСАТИСЬ</button>
+						<button class="block-btn service__btn car-purchase__btn" data-path="car-purchase"
+							type="button">ПІДІБРАТИ АВТО</button>
 					</div>
 				</div>
 			</div>
 		</section>
 		<section class="service2">
 			<div class="block-container">
-				<div class="calculator">
+				<div class="calculator" id="calculator">
 					<h2 class="calculator__title">КАЛЬКУЛЯТОР МИТНОЇ ВАРТОСТІ</h2>
 					<div class="calculator__wrapper">
 						<div class="calculator__form">
 							<form class="form-calc" action="/">
 								<div class="calculator__cars-type">
-									<input id="electro" type="radio" name="carType" value="">
+									<input id="electro" type="radio" name="carType" value="electro"  class="calculator-radio__btn">
 									<label class="light-car" for="electro">ЕЛЕКТРО</label>
-									<input id="hybrid" type="radio" name="carType" value="">
+									<input id="hybrid" type="radio" name="carType" value="hybrid"  class="calculator-radio__btn">
 									<label class="light-car" for="hybrid">ГІБРИД</label>
-									<input id="moto" type="radio" name="carType" value="">
+									<input id="moto" type="radio" name="carType" value="moto"  class="calculator-radio__btn"> 
 									<label class="light-car" for="moto">МОТО</label>
-									<input id="truck" type="radio" name="carType" value="">
+									<input id="truck" type="radio" name="carType" value="truck"  class="calculator-radio__btn">
 									<label class="height-car" for="truck">ВАНТАЖНІ</label>
+									<input id="lehko" type="radio" name="carType" value="lehko" class="calculator-radio__btn" checked>
+									<label class="height-car" for="lehko">ЛЕГКОВІ</label>
 								</div>
 								<div class="form-calc__price">
 									<label class="form-calc__label" for="car-price">Вартість автомобіля</label>
-									<input class="form-calc__input form-calc__input-short" id="car-price" type="text" name="car-price" value="">
-									<input class="form-calc__input form-calc__input-ushort" type="text" name="currency" value="EURO">
-									<span class="form-calc__circle"></span>
+									<input class="form-calc__input form-calc__input-short" id="car-price" type="number"
+										name="car-price" value="10000">
+
+
+									<select class="form-calc__input form-calc__input-ushort" id="currency" type="text"
+										name="currency">
+										<option value="€">EUR</option>
+										<option value="$">USD</option>
+									</select>
+
 								</div>
-								<div class="form-calc__weight">
+								<div class="form-calc__weight display-none">
 									<label class="form-calc__label" for="weight">Повна маса,кг</label>
-									<input class="form-calc__input" id="weight" type="text" name="weight" value="">
-									<span class="form-calc__circle"></span>
+									<input class="form-calc__input" id="weight" type="number" name="weight" value="30000">
+								</div>
+								<div class="form-calc__power">
+									<label class="form-calc__label" for="power">Потужність, кВт</label>
+									<input class="form-calc__input" id="power" type="number" name="power" value="150">
 								</div>
 								<div class="form-calc__volume">
 									<label class="form-calc__label" for="engine-volume">Обє’м двигуна куб.дм</label>
-									<input class="form-calc__input" id="engine-volume" type="text" name="volume" value="">
-									<span class="form-calc__circle"></span>
+									<select class="form-calc__input" id="engine-volume" type="text" name="volume">
+										<option value="500">0.5</option>
+										<option value="600">0.6</option>
+										<option value="700">0.7</option>
+										<option value="500">0.5</option>
+										<option value="800">0.8</option>
+										<option value="900">0.9</option>
+										<option value="1000">1.0</option>
+										<option value="1100">1.1</option>
+										<option value="1200">1.2</option>
+										<option value="1300">1.3</option>
+										<option value="1400">1.4</option>
+										<option value="1500">1.5</option>
+										<option value="1600">1.6</option>
+										<option value="1700">1.7</option>
+										<option value="1800">1.8</option>
+										<option value="1900">1.9</option>
+										<option value="2000" selected="selected">2.0</option>
+										<option value="2100">2.1</option>
+										<option value="2200">2.2</option>
+										<option value="2300">2.3</option>
+										<option value="2400">2.4</option>
+										<option value="2500">2.5</option>
+										<option value="2600">2.6</option>
+										<option value="2700">2.7</option>
+										<option value="2800">2.8</option>
+										<option value="2900">2.9</option>
+										<option value="3000">3.0</option>
+										<option value="3100">3.1</option>
+										<option value="3200">3.2</option>
+										<option value="3300">3.3</option>
+										<option value="3400">3.4</option>
+										<option value="3500">3.5</option>
+										<option value="3600">3.6</option>
+										<option value="3700">3.7</option>
+										<option value="3800">3.8</option>
+										<option value="3900">3.9</option>
+										<option value="4000">4.0</option>
+										<option value="4100">4.1</option>
+										<option value="4200">4.2</option>
+										<option value="4300">4.3</option>
+										<option value="4400">4.4</option>
+										<option value="4500">4.5</option>
+										<option value="4600">4.6</option>
+										<option value="4700">4.7</option>
+										<option value="4800">4.8</option>
+										<option value="4900">4.9</option>
+										<option value="5000">5.0</option>
+										<option value="5100">5.1</option>
+										<option value="5200">5.2</option>
+										<option value="5300">5.3</option>
+										<option value="5400">5.4</option>
+										<option value="5500">5.5</option>
+										<option value="5600">5.6</option>
+										<option value="5700">5.7</option>
+										<option value="5800">5.8</option>
+										<option value="5900">5.9</option>
+										<option value="6000">6.0</option>
+										<option value="6100">6.1</option>
+										<option value="6200">6.2</option>
+										<option value="6300">6.3</option>
+										<option value="6400">6.4</option>
+										<option value="6500">6.5</option>
+										<option value="6600">6.6</option>
+										<option value="6700">6.7</option>
+										<option value="6800">6.8</option>
+										<option value="6900">6.9</option>
+										<option value="7000">7.0</option>
+										<option value="7100">7.1</option>
+										<option value="7200">7.2</option>
+										<option value="7300">7.3</option>
+										<option value="7400">7.4</option>
+										<option value="7500">7.5</option>
+										<option value="7600">7.6</option>
+										<option value="7700">7.7</option>
+										<option value="7800">7.8</option>
+										<option value="7900">7.9</option>
+										<option value="8000">8.0</option>
+										<option value="8100">8.1</option>
+										<option value="8200">8.2</option>
+										<option value="8300">8.3</option>
+										<option value="8400">8.4</option>
+										<option value="8500">8.5</option>
+										<option value="8600">8.6</option>
+										<option value="8700">8.7</option>
+										<option value="8800">8.8</option>
+										<option value="8900">8.9</option>
+										<option value="9000">9.0</option>
+										<option value="9100">9.1</option>
+										<option value="9200">9.2</option>
+										<option value="9300">9.3</option>
+										<option value="9400">9.4</option>
+										<option value="9500">9.5</option>
+										<option value="9600">9.6</option>
+										<option value="9700">9.7</option>
+										<option value="9800">9.8</option>
+										<option value="9900">9.9</option>
+										<option value="10000">10.0</option>
+										<option value="10100">10.1</option>
+										<option value="10200">10.2</option>
+										<option value="10300">10.3</option>
+										<option value="10400">10.4</option>
+										<option value="10500">10.5</option>
+										<option value="10600">10.6</option>
+										<option value="10700">10.7</option>
+										<option value="10800">10.8</option>
+										<option value="10900">10.9</option>
+										<option value="11000">11.0</option>
+										<option value="11100">11.1</option>
+										<option value="11200">11.2</option>
+										<option value="11300">11.3</option>
+										<option value="11400">11.4</option>
+										<option value="11500">11.5</option>
+										<option value="11600">11.6</option>
+										<option value="11700">11.7</option>
+										<option value="11800">11.8</option>
+										<option value="11900">11.9</option>
+										<option value="12000">12.0</option>
+										<option value="12100">12.1</option>
+										<option value="12200">12.2</option>
+										<option value="12300">12.3</option>
+										<option value="12400">12.4</option>
+										<option value="12500">12.5</option>
+										<option value="12600">12.6</option>
+										<option value="12700">12.7</option>
+										<option value="12800">12.8</option>
+										<option value="12900">12.9</option>
+										<option value="13000">13.0</option>
+										<option value="13100">13.1</option>
+										<option value="13200">13.2</option>
+										<option value="13300">13.3</option>
+										<option value="13400">13.4</option>
+										<option value="13500">13.5</option>
+										<option value="13600">13.6</option>
+										<option value="13700">13.7</option>
+										<option value="13800">13.8</option>
+										<option value="13900">13.9</option>
+										<option value="14000">14.0</option>
+										<option value="14100">14.1</option>
+										<option value="14200">14.2</option>
+										<option value="14300">14.3</option>
+										<option value="14400">14.4</option>
+										<option value="14500">14.5</option>
+										<option value="14600">14.6</option>
+										<option value="14700">14.7</option>
+										<option value="14800">14.8</option>
+										<option value="14900">14.9</option>
+										<option value="15000">15.0</option>
+										<option value="15100">15.1</option>
+										<option value="15200">15.2</option>
+										<option value="15300">15.3</option>
+										<option value="15400">15.4</option>
+										<option value="15500">15.5</option>
+										<option value="15600">15.6</option>
+										<option value="15700">15.7</option>
+										<option value="15800">15.8</option>
+										<option value="15900">15.9</option>
+										<option value="16000">16.0</option>
+										<option value="16100">16.1</option>
+										<option value="16200">16.2</option>
+										<option value="16300">16.3</option>  
+										<option value="16400">16.4</option>
+										<option value="16500">16.5</option>
+										<option value="16600">16.6</option>
+										<option value="16700">16.7</option>
+										<option value="16800">16.8</option>
+										<option value="16900">16.9</option>
+										<option value="17000">17.0</option>
+										<option value="17100">17.1</option>
+										<option value="17200">17.2</option>
+										<option value="17300">17.3</option>
+										<option value="17400">17.4</option>
+										<option value="17500">17.5</option>
+										<option value="17600">17.6</option>
+										<option value="17700">17.7</option>
+										<option value="17800">17.8</option>
+										<option value="17900">17.9</option>
+										<option value="18000">18.0</option>
+										<option value="18100">18.1</option>
+										<option value="18200">18.2</option>
+										<option value="18300">18.3</option>
+										<option value="18400">18.4</option>
+										<option value="18500">18.5</option>
+										<option value="18600">18.6</option>
+										<option value="18700">18.7</option>
+										<option value="18800">18.8</option>
+										<option value="18900">18.9</option>
+										<option value="19000">19.0</option>
+										<option value="19100">19.1</option>
+										<option value="19200">19.2</option>
+										<option value="19300">19.3</option>
+										<option value="19400">19.4</option>
+										<option value="19500">19.5</option>
+										<option value="19600">19.6</option>
+										<option value="19700">19.7</option>
+										<option value="19800">19.8</option>
+										<option value="19900">19.9</option>
+										<option value="20000">20.0</option>
+									</select>
 								</div>
+								<div class="form-calc__volume_moto">
+									<label class="form-calc__label" for="engine-volume_moto">Обє’м двигуна куб.дм</label>
+									<input class="form-calc__input" id="engine-volume_moto" type="number" name="volume_moto" value="150">
+								</div>
+								
 								<div class="form-calc__type-engine">
 									<label class="form-calc__label" for="engine-type">Тип двигуна</label>
-									<input class="form-calc__input" id="engine-type" type="text" name="engine-type" value="">
-									<span class="form-calc__circle"></span>
+									<select class="form-calc__input" id="engine-type" type="text" name="engine-type">
+										<option value="gasoline">Бензин</option>
+										<option value="diesel">Дизель</option>
+									</select>
 								</div>
 								<div class="form-calc__age-car">
 									<label class="form-calc__label" for="car-age">Вік автомобіля</label>
-									<input class="form-calc__input" id="car-age" type="text" name="car-age" value="">
-									<span class="form-calc__circle"></span>
+									<select class="form-calc__input" id="car-age" type="text" name="car-age">
+										<option value="2021">2021</option>
+										<option value="2020">2020</option>
+										<option value="2019">2019</option>
+										<option value="2018">2018</option>
+										<option value="2017">2017</option>
+										<option value="2016">2016</option>
+										<option value="2015">2015</option>
+										<option value="2014">2014</option>
+										<option value="2013">2013</option>
+										<option value="2012">2012</option>
+										<option value="2011">2011</option>
+										<option value="2010">2010</option>
+										<option value="2009">2009</option>
+										<option value="2008">2008</option>
+										<option value="2007">2007</option>
+										<option value="2006">2006</option>
+										<option value="2005">2005</option>
+										<option value="2004">2004 і старше</option>
+									</select>
 								</div>
 								<div class="form-calc__buttons">
 									<button class="block-btn form-calc__btn" type="button">РОЗРАХУВАТИ</button>
@@ -387,33 +684,33 @@
 							</div>
 							<div class="prices-calc__item">
 								<span class="prices-calc__price-name">ЦІНА З РОЗМИТНЕННЯМ</span>
-								<span class="prices-calc__price">16338 $</span>
+								<span class="prices-calc__price price_clear">0 $</span>
 							</div>
 							<div class="prices-calc__item">
 								<span class="prices-calc__price-name">ПДВ</span>
-								<span class="prices-calc__price">16338 $</span>
+								<span class="prices-calc__price price_pdv">0 $</span>
 							</div>
 							<div class="prices-calc__item">
 								<span class="prices-calc__price-name">МИТО</span>
-								<span class="prices-calc__price">16338 $</span>
+								<span class="prices-calc__price price_mito">0 $</span>
 							</div>
 							<div class="prices-calc__item">
 								<span class="prices-calc__price-name">АКЦИЗНИЙ ЗБІР</span>
-								<span class="prices-calc__price">16338 $</span>
+								<span class="prices-calc__price price_actziz">0 $</span>
 							</div>
 							<div class="prices-calc__item">
 								<span class="prices-calc__price-name">ВСЬОГО М.П.</span>
-								<span class="prices-calc__price">16338 $</span>
+								<span class="prices-calc__price price_total">0 $</span>
 							</div>
 							<div class="prices-calc__add-costs">
 								ДОДАТКОВІ ВИТРАТИ
-								<span>0$</span>
-								<span>0$</span>
+								<span></span>
+								<span class="price_additional">0$</span>
 							</div>
 							<div class="prices-calc__add-costs">
 								ПЕНСІЙНИЙ ФОНД
-								<span>0$</span>
-								<span>0$</span>
+								<span></span>
+								<span class="price_retired">0$</span>
 							</div>
 						</div>
 					</div>
@@ -422,7 +719,16 @@
 					<h3 class="service2__title block-title2">ДОСТАВКА</h3>
 					<div class="delivery__text block-text-gr">
 						<p>
-							Керамічний захист кузова довговічніший, надійніший від обробки «рідким склом». За рахунок більш тривалого терміну служби обійдеться в результаті дешевше ніж будь яка інша обробка. При належному догляді захисне покриття може служити кілька років після нанесення. Зняти нанокераміку раніше терміну можна тільки за допомогою полірування,або постійними заїздами в «автоматичні» мийки - там і заводський лак недовго проживе.  Ефект «Антидощ» - при нанесенні нанокерамічного складу на лобове скло вода просто не буде встигає затриматися на склі, «двірники» працюватимуть набагато рідше, економлячи ресурс і зберігаючи саме скло від механічних пошкоджень.На задні і бічні вікна машини гідрофобное покриття «антидощ» теж не завадить нанести,видимість в дощову погоду істотно покращиться.Нанокераміка є одною з самих передових і ефективних методів зберегти своє авто в ідеальному стані.
+							Керамічний захист кузова довговічніший, надійніший від обробки «рідким склом». За рахунок
+							більш тривалого терміну служби обійдеться в результаті дешевше ніж будь яка інша обробка.
+							При належному догляді захисне покриття може служити кілька років після нанесення. Зняти
+							нанокераміку раніше терміну можна тільки за допомогою полірування,або постійними заїздами в
+							«автоматичні» мийки - там і заводський лак недовго проживе. Ефект «Антидощ» - при нанесенні
+							нанокерамічного складу на лобове скло вода просто не буде встигає затриматися на склі,
+							«двірники» працюватимуть набагато рідше, економлячи ресурс і зберігаючи саме скло від
+							механічних пошкоджень.На задні і бічні вікна машини гідрофобное покриття «антидощ» теж не
+							завадить нанести,видимість в дощову погоду істотно покращиться.Нанокераміка є одною з самих
+							передових і ефективних методів зберегти своє авто в ідеальному стані.
 						</p>
 					</div>
 					<div class="service2__circle block-circle">
@@ -435,7 +741,16 @@
 					<h3 class="service2__title block-title2">ЗАПЧАСТИНИ</h3>
 					<div class="spare-parts__text block-text-gr">
 						<p>
-							Керамічний захист кузова довговічніший, надійніший від обробки «рідким склом». За рахунок більш тривалого терміну служби обійдеться в результаті дешевше ніж будь яка інша обробка. При належному догляді захисне покриття може служити кілька років після нанесення. Зняти нанокераміку раніше терміну можна тільки за допомогою полірування,або постійними заїздами в «автоматичні» мийки - там і заводський лак недовго проживе.  Ефект «Антидощ» - при нанесенні нанокерамічного складу на лобове скло вода просто не буде встигає затриматися на склі, «двірники» працюватимуть набагато рідше, економлячи ресурс і зберігаючи саме скло від механічних пошкоджень.На задні і бічні вікна машини гідрофобное покриття «антидощ» теж не завадить нанести,видимість в дощову погоду істотно покращиться.Нанокераміка є одною з самих передових і ефективних методів зберегти своє авто в ідеальному стані.
+							Керамічний захист кузова довговічніший, надійніший від обробки «рідким склом». За рахунок
+							більш тривалого терміну служби обійдеться в результаті дешевше ніж будь яка інша обробка.
+							При належному догляді захисне покриття може служити кілька років після нанесення. Зняти
+							нанокераміку раніше терміну можна тільки за допомогою полірування,або постійними заїздами в
+							«автоматичні» мийки - там і заводський лак недовго проживе. Ефект «Антидощ» - при нанесенні
+							нанокерамічного складу на лобове скло вода просто не буде встигає затриматися на склі,
+							«двірники» працюватимуть набагато рідше, економлячи ресурс і зберігаючи саме скло від
+							механічних пошкоджень.На задні і бічні вікна машини гідрофобное покриття «антидощ» теж не
+							завадить нанести,видимість в дощову погоду істотно покращиться.Нанокераміка є одною з самих
+							передових і ефективних методів зберегти своє авто в ідеальному стані.
 						</p>
 					</div>
 					<div class="service2__circle block-circle">
@@ -448,7 +763,16 @@
 					<h3 class="service2__title block-title2">СТРАХУВАННЯ</h3>
 					<div class="insurance__text block-text-gr">
 						<p>
-							Керамічний захист кузова довговічніший, надійніший від обробки «рідким склом». За рахунок більш тривалого терміну служби обійдеться в результаті дешевше ніж будь яка інша обробка. При належному догляді захисне покриття може служити кілька років після нанесення. Зняти нанокераміку раніше терміну можна тільки за допомогою полірування,або постійними заїздами в «автоматичні» мийки - там і заводський лак недовго проживе.  Ефект «Антидощ» - при нанесенні нанокерамічного складу на лобове скло вода просто не буде встигає затриматися на склі, «двірники» працюватимуть набагато рідше, економлячи ресурс і зберігаючи саме скло від механічних пошкоджень.На задні і бічні вікна машини гідрофобное покриття «антидощ» теж не завадить нанести,видимість в дощову погоду істотно покращиться.Нанокераміка є одною з самих передових і ефективних методів зберегти своє авто в ідеальному стані.
+							Керамічний захист кузова довговічніший, надійніший від обробки «рідким склом». За рахунок
+							більш тривалого терміну служби обійдеться в результаті дешевше ніж будь яка інша обробка.
+							При належному догляді захисне покриття може служити кілька років після нанесення. Зняти
+							нанокераміку раніше терміну можна тільки за допомогою полірування,або постійними заїздами в
+							«автоматичні» мийки - там і заводський лак недовго проживе. Ефект «Антидощ» - при нанесенні
+							нанокерамічного складу на лобове скло вода просто не буде встигає затриматися на склі,
+							«двірники» працюватимуть набагато рідше, економлячи ресурс і зберігаючи саме скло від
+							механічних пошкоджень.На задні і бічні вікна машини гідрофобное покриття «антидощ» теж не
+							завадить нанести,видимість в дощову погоду істотно покращиться.Нанокераміка є одною з самих
+							передових і ефективних методів зберегти своє авто в ідеальному стані.
 						</p>
 					</div>
 					<div class="service2__circle block-circle">
@@ -460,11 +784,18 @@
 			</div>
 		</section>
 		<section class="tuning">
-			<div class="block-container">
+			<div class="block-container" id="chip">
 				<h2 class="block-title1">CHIP TUNING</h2>
 				<div class="block-text-wh">
 					<p>
-						Чип-тюнінг - настройка режимів роботи електронних контролерів шляхом корекції внутрішніх керуючих програм (firmware). В основному поняття застосовується для позначення корекції програми блоку управління двигуном автомобіля з метою зміни окремих характеристик мотора. Крім зазначеного до чіп-тюнінгу іноді відносять і застосування додаткових електронних модулів для вирішення схожих завдань. Застосування чіп-тюнінгу для збільшення потужності несе в собі ризики: втрати гарантії, зниження ресурсу двигуна, коробки передач і інших агрегатів, порушення роботи екологічних підсистем двигуна. Після змін потрібно більш часте проведення регламентних заходів і замін технічних рідин
+						Чип-тюнінг - настройка режимів роботи електронних контролерів шляхом корекції внутрішніх
+						керуючих програм (firmware). В основному поняття застосовується для позначення корекції програми
+						блоку управління двигуном автомобіля з метою зміни окремих характеристик мотора. Крім
+						зазначеного до чіп-тюнінгу іноді відносять і застосування додаткових електронних модулів для
+						вирішення схожих завдань. Застосування чіп-тюнінгу для збільшення потужності несе в собі ризики:
+						втрати гарантії, зниження ресурсу двигуна, коробки передач і інших агрегатів, порушення роботи
+						екологічних підсистем двигуна. Після змін потрібно більш часте проведення регламентних заходів і
+						замін технічних рідин
 					</p>
 				</div>
 				<h3 class="block-title2">BEFOR&AFTER</h3>
@@ -494,7 +825,44 @@
 					<h3 class="stages__title block-title2">STAGE 1</h3>
 					<div class="block-text-gr">
 						<p>
-							Полягає в зміні тільки програми управління ДВС, «залізо» в даному випадку не рушає. Начебто все зрозуміло, але є свої нюанси, про них і поговоримо. Для початку потрібно розуміння, що з себе представляє чіп тюнінг турбо ДВС. частина 1 частина 2 Ви визначилися, де будете робити тюнінг, тим більше у друга Петі він зроблений давно, і Петя стверджує що краще софта немає чим, там де він робив, машина у нього валить прекрасно, жере помірно, і в цілому проблем не доставляє, але ж Петя не профан в авто, він має вищу освіту в сфері менеджменту, цілодобово сидить на форумах та інших автомобільних ресурсах, знає що таке відкати запалювання, точніше думає, що знає ... та й 100500 відгуків на драйві в тому ж дусі, пре сильно, жере не багато . На квотере або заїзди ролом, цей софт рве всіх конкурентів. Висновок простий, все що на аналогічних авто їде гірше, є повним шлаком. Трохи віддалився від нашої теми, продовжимо. Stage1 на більшості сучасних турбо моторів, дає відчутну прибавку в динаміці, і не позначаються негативно на ресурсі. Ключове слово на більшості, є ряд ДВС, де прибавка становить всього лише близько 10%, пов'язано це з обмеженими можливостями турбокомпресора, рідше системою випуску або випуску, системою охолодження. В цьому випадку має відразу робити stage2 або 3, інакше Ви ризикуєте як мінімум не виправдати своїх же очікувань, а як максимум потрапити на контору, мета якої банально нажива, і вони готові віджимати все соки агрегатів, на межі їх можливостей. В даному випадку розрахунок йде простий, машина не для треку, і максимальну короткочасне навантаження авто витримає, нібито проїхати пару раз газ в підлогу, або ж переміщатися в потоці з періодичними прискореннями, правда з величезними втратами за загальним ресурсу ... Адже в більшості випадків, ми все так їздимо. Але варто загнати авто на трек або скажімо на серпантин з високим кутом підйому, і досить буде 5-10 хвилин, що б перегріти ДВС, відправити лопаті крильчатки в усі тяжкі, отримати прогар клапана або поршня, в кращому випадку машина впаде в аварійний режим, але буває, його банально відключають. Ця страшилка відноситься до моторів мають об'єм 1.6 і менше, при чому далеко не до всіх. У моторах більшого об'єму, як правило закладений вищий ресурс по агрегатам і їх продуктивності. Всі програми stage1 йдуть типові. Тобто, відкатані або протестовані на справних автомобілях, і на Вашому авто повинні показати ті ж результати і параметри роботи після прошивки. У разі, якщо Ваша машина має якісь відхилення або несправності, про які Ви можете навіть не знати, бажаний результат досягнутий не буде, як наприклад на машині друга Петі. Буде потрібно усунення несправності, будь то забиті форсунки, втомлені свічки і тд. Пам'ятайте відсутність помилок, не означає відсутність несправності! Буває, що навіть на абсолютно справному автомобілі, потрібне коригування програми щодо типової, т.к стан кожного мотора і агрегатів різний. В ідеалі ставиться типовий тюнінг софт, і коригується під конкретну машину. У цьому нам допоможе зняття логів. Їм до речі буде присвячена окрема тема, подивитися відкати запалювання, тиск наддуву, температуру і ще пару параметрів тільки на одній з передач, під короткочасної повним навантаженням, навіть близько не відображає повну картину!  У підсумку, з розумінням справи ми зробили чіп тюнінг і отримали, що хотіли) Але потім хочеться більше ...
+							Полягає в зміні тільки програми управління ДВС, «залізо» в даному випадку не рушає. Начебто
+							все зрозуміло, але є свої нюанси, про них і поговоримо. Для початку потрібно розуміння, що з
+							себе представляє чіп тюнінг турбо ДВС. частина 1 частина 2 Ви визначилися, де будете робити
+							тюнінг, тим більше у друга Петі він зроблений давно, і Петя стверджує що краще софта немає
+							чим, там де він робив, машина у нього валить прекрасно, жере помірно, і в цілому проблем не
+							доставляє, але ж Петя не профан в авто, він має вищу освіту в сфері менеджменту, цілодобово
+							сидить на форумах та інших автомобільних ресурсах, знає що таке відкати запалювання, точніше
+							думає, що знає ... та й 100500 відгуків на драйві в тому ж дусі, пре сильно, жере не багато
+							. На квотере або заїзди ролом, цей софт рве всіх конкурентів. Висновок простий, все що на
+							аналогічних авто їде гірше, є повним шлаком. Трохи віддалився від нашої теми, продовжимо.
+							Stage1 на більшості сучасних турбо моторів, дає відчутну прибавку в динаміці, і не
+							позначаються негативно на ресурсі. Ключове слово на більшості, є ряд ДВС, де прибавка
+							становить всього лише близько 10%, пов'язано це з обмеженими можливостями турбокомпресора,
+							рідше системою випуску або випуску, системою охолодження. В цьому випадку має відразу робити
+							stage2 або 3, інакше Ви ризикуєте як мінімум не виправдати своїх же очікувань, а як максимум
+							потрапити на контору, мета якої банально нажива, і вони готові віджимати все соки агрегатів,
+							на межі їх можливостей. В даному випадку розрахунок йде простий, машина не для треку, і
+							максимальну короткочасне навантаження авто витримає, нібито проїхати пару раз газ в підлогу,
+							або ж переміщатися в потоці з періодичними прискореннями, правда з величезними втратами за
+							загальним ресурсу ... Адже в більшості випадків, ми все так їздимо. Але варто загнати авто
+							на трек або скажімо на серпантин з високим кутом підйому, і досить буде 5-10 хвилин, що б
+							перегріти ДВС, відправити лопаті крильчатки в усі тяжкі, отримати прогар клапана або поршня,
+							в кращому випадку машина впаде в аварійний режим, але буває, його банально відключають. Ця
+							страшилка відноситься до моторів мають об'єм 1.6 і менше, при чому далеко не до всіх. У
+							моторах більшого об'єму, як правило закладений вищий ресурс по агрегатам і їх
+							продуктивності. Всі програми stage1 йдуть типові. Тобто, відкатані або протестовані на
+							справних автомобілях, і на Вашому авто повинні показати ті ж результати і параметри роботи
+							після прошивки. У разі, якщо Ваша машина має якісь відхилення або несправності, про які Ви
+							можете навіть не знати, бажаний результат досягнутий не буде, як наприклад на машині друга
+							Петі. Буде потрібно усунення несправності, будь то забиті форсунки, втомлені свічки і тд.
+							Пам'ятайте відсутність помилок, не означає відсутність несправності! Буває, що навіть на
+							абсолютно справному автомобілі, потрібне коригування програми щодо типової, т.к стан кожного
+							мотора і агрегатів різний. В ідеалі ставиться типовий тюнінг софт, і коригується під
+							конкретну машину. У цьому нам допоможе зняття логів. Їм до речі буде присвячена окрема тема,
+							подивитися відкати запалювання, тиск наддуву, температуру і ще пару параметрів тільки на
+							одній з передач, під короткочасної повним навантаженням, навіть близько не відображає повну
+							картину! У підсумку, з розумінням справи ми зробили чіп тюнінг і отримали, що хотіли) Але
+							потім хочеться більше ...
 						</p>
 					</div>
 					<div class="block-circle">
@@ -502,15 +870,52 @@
 						<span></span>
 						<span></span>
 					</div>
-					<div class="price__buttons">
-						<button class="block-btn stages__btn" type="button">ЗАПИСАТИСЬ</button>
+					<div class="service__buttons">
+						<button class="block-btn service__btn" id="stages-buttons" type="button">ЗАПИСАТИСЬ</button>
 					</div>
 				</div>
 				<div class="stage2">
 					<h3 class="stages__title block-title2">STAGE 2</h3>
 					<div class="block-text-gr">
 						<p>
-							Полягає в зміні тільки програми управління ДВС, «залізо» в даному випадку не рушає. Начебто все зрозуміло, але є свої нюанси, про них і поговоримо. Для початку потрібно розуміння, що з себе представляє чіп тюнінг турбо ДВС. частина 1 частина 2 Ви визначилися, де будете робити тюнінг, тим більше у друга Петі він зроблений давно, і Петя стверджує що краще софта немає чим, там де він робив, машина у нього валить прекрасно, жере помірно, і в цілому проблем не доставляє, але ж Петя не профан в авто, він має вищу освіту в сфері менеджменту, цілодобово сидить на форумах та інших автомобільних ресурсах, знає що таке відкати запалювання, точніше думає, що знає ... та й 100500 відгуків на драйві в тому ж дусі, пре сильно, жере не багато . На квотере або заїзди ролом, цей софт рве всіх конкурентів. Висновок простий, все що на аналогічних авто їде гірше, є повним шлаком. Трохи віддалився від нашої теми, продовжимо. Stage1 на більшості сучасних турбо моторів, дає відчутну прибавку в динаміці, і не позначаються негативно на ресурсі. Ключове слово на більшості, є ряд ДВС, де прибавка становить всього лише близько 10%, пов'язано це з обмеженими можливостями турбокомпресора, рідше системою випуску або випуску, системою охолодження. В цьому випадку має відразу робити stage2 або 3, інакше Ви ризикуєте як мінімум не виправдати своїх же очікувань, а як максимум потрапити на контору, мета якої банально нажива, і вони готові віджимати все соки агрегатів, на межі їх можливостей. В даному випадку розрахунок йде простий, машина не для треку, і максимальну короткочасне навантаження авто витримає, нібито проїхати пару раз газ в підлогу, або ж переміщатися в потоці з періодичними прискореннями, правда з величезними втратами за загальним ресурсу ... Адже в більшості випадків, ми все так їздимо. Але варто загнати авто на трек або скажімо на серпантин з високим кутом підйому, і досить буде 5-10 хвилин, що б перегріти ДВС, відправити лопаті крильчатки в усі тяжкі, отримати прогар клапана або поршня, в кращому випадку машина впаде в аварійний режим, але буває, його банально відключають. Ця страшилка відноситься до моторів мають об'єм 1.6 і менше, при чому далеко не до всіх. У моторах більшого об'єму, як правило закладений вищий ресурс по агрегатам і їх продуктивності. Всі програми stage1 йдуть типові. Тобто, відкатані або протестовані на справних автомобілях, і на Вашому авто повинні показати ті ж результати і параметри роботи після прошивки. У разі, якщо Ваша машина має якісь відхилення або несправності, про які Ви можете навіть не знати, бажаний результат досягнутий не буде, як наприклад на машині друга Петі. Буде потрібно усунення несправності, будь то забиті форсунки, втомлені свічки і тд. Пам'ятайте відсутність помилок, не означає відсутність несправності! Буває, що навіть на абсолютно справному автомобілі, потрібне коригування програми щодо типової, т.к стан кожного мотора і агрегатів різний. В ідеалі ставиться типовий тюнінг софт, і коригується під конкретну машину. У цьому нам допоможе зняття логів. Їм до речі буде присвячена окрема тема, подивитися відкати запалювання, тиск наддуву, температуру і ще пару параметрів тільки на одній з передач, під короткочасної повним навантаженням, навіть близько не відображає повну картину!  У підсумку, з розумінням справи ми зробили чіп тюнінг і отримали, що хотіли) Але потім хочеться більше ...
+							Полягає в зміні тільки програми управління ДВС, «залізо» в даному випадку не рушає. Начебто
+							все зрозуміло, але є свої нюанси, про них і поговоримо. Для початку потрібно розуміння, що з
+							себе представляє чіп тюнінг турбо ДВС. частина 1 частина 2 Ви визначилися, де будете робити
+							тюнінг, тим більше у друга Петі він зроблений давно, і Петя стверджує що краще софта немає
+							чим, там де він робив, машина у нього валить прекрасно, жере помірно, і в цілому проблем не
+							доставляє, але ж Петя не профан в авто, він має вищу освіту в сфері менеджменту, цілодобово
+							сидить на форумах та інших автомобільних ресурсах, знає що таке відкати запалювання, точніше
+							думає, що знає ... та й 100500 відгуків на драйві в тому ж дусі, пре сильно, жере не багато
+							. На квотере або заїзди ролом, цей софт рве всіх конкурентів. Висновок простий, все що на
+							аналогічних авто їде гірше, є повним шлаком. Трохи віддалився від нашої теми, продовжимо.
+							Stage1 на більшості сучасних турбо моторів, дає відчутну прибавку в динаміці, і не
+							позначаються негативно на ресурсі. Ключове слово на більшості, є ряд ДВС, де прибавка
+							становить всього лише близько 10%, пов'язано це з обмеженими можливостями турбокомпресора,
+							рідше системою випуску або випуску, системою охолодження. В цьому випадку має відразу робити
+							stage2 або 3, інакше Ви ризикуєте як мінімум не виправдати своїх же очікувань, а як максимум
+							потрапити на контору, мета якої банально нажива, і вони готові віджимати все соки агрегатів,
+							на межі їх можливостей. В даному випадку розрахунок йде простий, машина не для треку, і
+							максимальну короткочасне навантаження авто витримає, нібито проїхати пару раз газ в підлогу,
+							або ж переміщатися в потоці з періодичними прискореннями, правда з величезними втратами за
+							загальним ресурсу ... Адже в більшості випадків, ми все так їздимо. Але варто загнати авто
+							на трек або скажімо на серпантин з високим кутом підйому, і досить буде 5-10 хвилин, що б
+							перегріти ДВС, відправити лопаті крильчатки в усі тяжкі, отримати прогар клапана або поршня,
+							в кращому випадку машина впаде в аварійний режим, але буває, його банально відключають. Ця
+							страшилка відноситься до моторів мають об'єм 1.6 і менше, при чому далеко не до всіх. У
+							моторах більшого об'єму, як правило закладений вищий ресурс по агрегатам і їх
+							продуктивності. Всі програми stage1 йдуть типові. Тобто, відкатані або протестовані на
+							справних автомобілях, і на Вашому авто повинні показати ті ж результати і параметри роботи
+							після прошивки. У разі, якщо Ваша машина має якісь відхилення або несправності, про які Ви
+							можете навіть не знати, бажаний результат досягнутий не буде, як наприклад на машині друга
+							Петі. Буде потрібно усунення несправності, будь то забиті форсунки, втомлені свічки і тд.
+							Пам'ятайте відсутність помилок, не означає відсутність несправності! Буває, що навіть на
+							абсолютно справному автомобілі, потрібне коригування програми щодо типової, т.к стан кожного
+							мотора і агрегатів різний. В ідеалі ставиться типовий тюнінг софт, і коригується під
+							конкретну машину. У цьому нам допоможе зняття логів. Їм до речі буде присвячена окрема тема,
+							подивитися відкати запалювання, тиск наддуву, температуру і ще пару параметрів тільки на
+							одній з передач, під короткочасної повним навантаженням, навіть близько не відображає повну
+							картину! У підсумку, з розумінням справи ми зробили чіп тюнінг і отримали, що хотіли) Але
+							потім хочеться більше ...
 						</p>
 					</div>
 					<div class="block-circle">
@@ -518,15 +923,52 @@
 						<span></span>
 						<span></span>
 					</div>
-					<div class="price__buttons">
-						<button class="block-btn stages__btn" type="button">ЗАПИСАТИСЬ</button>
+					<div class="service__buttons">
+						<button class="block-btn service__btn" id="stages-buttons" type="button">ЗАПИСАТИСЬ</button>
 					</div>
 				</div>
 				<div class="stage3">
 					<h3 class="stages__title block-title2">STAGE 3</h3>
 					<div class="block-text-gr">
 						<p>
-							Полягає в зміні тільки програми управління ДВС, «залізо» в даному випадку не рушає. Начебто все зрозуміло, але є свої нюанси, про них і поговоримо. Для початку потрібно розуміння, що з себе представляє чіп тюнінг турбо ДВС. частина 1 частина 2 Ви визначилися, де будете робити тюнінг, тим більше у друга Петі він зроблений давно, і Петя стверджує що краще софта немає чим, там де він робив, машина у нього валить прекрасно, жере помірно, і в цілому проблем не доставляє, але ж Петя не профан в авто, він має вищу освіту в сфері менеджменту, цілодобово сидить на форумах та інших автомобільних ресурсах, знає що таке відкати запалювання, точніше думає, що знає ... та й 100500 відгуків на драйві в тому ж дусі, пре сильно, жере не багато . На квотере або заїзди ролом, цей софт рве всіх конкурентів. Висновок простий, все що на аналогічних авто їде гірше, є повним шлаком. Трохи віддалився від нашої теми, продовжимо. Stage1 на більшості сучасних турбо моторів, дає відчутну прибавку в динаміці, і не позначаються негативно на ресурсі. Ключове слово на більшості, є ряд ДВС, де прибавка становить всього лише близько 10%, пов'язано це з обмеженими можливостями турбокомпресора, рідше системою випуску або випуску, системою охолодження. В цьому випадку має відразу робити stage2 або 3, інакше Ви ризикуєте як мінімум не виправдати своїх же очікувань, а як максимум потрапити на контору, мета якої банально нажива, і вони готові віджимати все соки агрегатів, на межі їх можливостей. В даному випадку розрахунок йде простий, машина не для треку, і максимальну короткочасне навантаження авто витримає, нібито проїхати пару раз газ в підлогу, або ж переміщатися в потоці з періодичними прискореннями, правда з величезними втратами за загальним ресурсу ... Адже в більшості випадків, ми все так їздимо. Але варто загнати авто на трек або скажімо на серпантин з високим кутом підйому, і досить буде 5-10 хвилин, що б перегріти ДВС, відправити лопаті крильчатки в усі тяжкі, отримати прогар клапана або поршня, в кращому випадку машина впаде в аварійний режим, але буває, його банально відключають. Ця страшилка відноситься до моторів мають об'єм 1.6 і менше, при чому далеко не до всіх. У моторах більшого об'єму, як правило закладений вищий ресурс по агрегатам і їх продуктивності. Всі програми stage1 йдуть типові. Тобто, відкатані або протестовані на справних автомобілях, і на Вашому авто повинні показати ті ж результати і параметри роботи після прошивки. У разі, якщо Ваша машина має якісь відхилення або несправності, про які Ви можете навіть не знати, бажаний результат досягнутий не буде, як наприклад на машині друга Петі. Буде потрібно усунення несправності, будь то забиті форсунки, втомлені свічки і тд. Пам'ятайте відсутність помилок, не означає відсутність несправності! Буває, що навіть на абсолютно справному автомобілі, потрібне коригування програми щодо типової, т.к стан кожного мотора і агрегатів різний. В ідеалі ставиться типовий тюнінг софт, і коригується під конкретну машину. У цьому нам допоможе зняття логів. Їм до речі буде присвячена окрема тема, подивитися відкати запалювання, тиск наддуву, температуру і ще пару параметрів тільки на одній з передач, під короткочасної повним навантаженням, навіть близько не відображає повну картину!  У підсумку, з розумінням справи ми зробили чіп тюнінг і отримали, що хотіли) Але потім хочеться більше ...
+							Полягає в зміні тільки програми управління ДВС, «залізо» в даному випадку не рушає. Начебто
+							все зрозуміло, але є свої нюанси, про них і поговоримо. Для початку потрібно розуміння, що з
+							себе представляє чіп тюнінг турбо ДВС. частина 1 частина 2 Ви визначилися, де будете робити
+							тюнінг, тим більше у друга Петі він зроблений давно, і Петя стверджує що краще софта немає
+							чим, там де він робив, машина у нього валить прекрасно, жере помірно, і в цілому проблем не
+							доставляє, але ж Петя не профан в авто, він має вищу освіту в сфері менеджменту, цілодобово
+							сидить на форумах та інших автомобільних ресурсах, знає що таке відкати запалювання, точніше
+							думає, що знає ... та й 100500 відгуків на драйві в тому ж дусі, пре сильно, жере не багато
+							. На квотере або заїзди ролом, цей софт рве всіх конкурентів. Висновок простий, все що на
+							аналогічних авто їде гірше, є повним шлаком. Трохи віддалився від нашої теми, продовжимо.
+							Stage1 на більшості сучасних турбо моторів, дає відчутну прибавку в динаміці, і не
+							позначаються негативно на ресурсі. Ключове слово на більшості, є ряд ДВС, де прибавка
+							становить всього лише близько 10%, пов'язано це з обмеженими можливостями турбокомпресора,
+							рідше системою випуску або випуску, системою охолодження. В цьому випадку має відразу робити
+							stage2 або 3, інакше Ви ризикуєте як мінімум не виправдати своїх же очікувань, а як максимум
+							потрапити на контору, мета якої банально нажива, і вони готові віджимати все соки агрегатів,
+							на межі їх можливостей. В даному випадку розрахунок йде простий, машина не для треку, і
+							максимальну короткочасне навантаження авто витримає, нібито проїхати пару раз газ в підлогу,
+							або ж переміщатися в потоці з періодичними прискореннями, правда з величезними втратами за
+							загальним ресурсу ... Адже в більшості випадків, ми все так їздимо. Але варто загнати авто
+							на трек або скажімо на серпантин з високим кутом підйому, і досить буде 5-10 хвилин, що б
+							перегріти ДВС, відправити лопаті крильчатки в усі тяжкі, отримати прогар клапана або поршня,
+							в кращому випадку машина впаде в аварійний режим, але буває, його банально відключають. Ця
+							страшилка відноситься до моторів мають об'єм 1.6 і менше, при чому далеко не до всіх. У
+							моторах більшого об'єму, як правило закладений вищий ресурс по агрегатам і їх
+							продуктивності. Всі програми stage1 йдуть типові. Тобто, відкатані або протестовані на
+							справних автомобілях, і на Вашому авто повинні показати ті ж результати і параметри роботи
+							після прошивки. У разі, якщо Ваша машина має якісь відхилення або несправності, про які Ви
+							можете навіть не знати, бажаний результат досягнутий не буде, як наприклад на машині друга
+							Петі. Буде потрібно усунення несправності, будь то забиті форсунки, втомлені свічки і тд.
+							Пам'ятайте відсутність помилок, не означає відсутність несправності! Буває, що навіть на
+							абсолютно справному автомобілі, потрібне коригування програми щодо типової, т.к стан кожного
+							мотора і агрегатів різний. В ідеалі ставиться типовий тюнінг софт, і коригується під
+							конкретну машину. У цьому нам допоможе зняття логів. Їм до речі буде присвячена окрема тема,
+							подивитися відкати запалювання, тиск наддуву, температуру і ще пару параметрів тільки на
+							одній з передач, під короткочасної повним навантаженням, навіть близько не відображає повну
+							картину! У підсумку, з розумінням справи ми зробили чіп тюнінг і отримали, що хотіли) Але
+							потім хочеться більше ...
 						</p>
 					</div>
 					<div class="block-circle">
@@ -534,8 +976,8 @@
 						<span></span>
 						<span></span>
 					</div>
-					<div class="price__buttons">
-						<button class="block-btn stages__btn" type="button">ЗАПИСАТИСЬ</button>
+					<div class="service__buttons">
+						<button class="block-btn service__btn" id="stages-buttons" type="button">ЗАПИСАТИСЬ</button>
 					</div>
 				</div>
 			</div>
@@ -546,7 +988,39 @@
 					<h3 class="service3__title block-title2">SERVICE</h3>
 					<div class="block-text-gr">
 						<p>
-							Для підтримки працездатності, комфортабельності і безпеки автомобіля необхідно його своєчасне технічне обслуговування. Суть технічного обслуговування полягає в тому, щоб запобігати появі серйозних несправностей, вчасно усуваючи дрібні неполадки і оновлюючи важливі для роботи деталі автомобіля. Регулярне технічне обслуговування авто - це гарантія безпеки, економії та довгих років життя автомобіля. ⠀ Всі послуги з технічного обслуговування авто Вам готова надати наша команда професіоналів
+							Для підтримки працездатності, комфортабельності і безпеки автомобіля необхідно його
+							своєчасне технічне обслуговування. Суть технічного обслуговування полягає в тому, щоб
+							запобігати появі серйозних несправностей, вчасно усуваючи дрібні неполадки і оновлюючи
+							важливі для роботи деталі автомобіля. Регулярне технічне обслуговування авто - це гарантія
+							безпеки, економії та довгих років життя автомобіля. ⠀ Всі послуги з технічного
+							обслуговування авто Вам готова надати наша команда професіоналів
+						</p>
+					</div>
+					<div class="service3__circle block-circle">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</div>
+
+				<div class="service3__item">
+					<h3 class="service3__title block-title2">UP STAGE</h3>
+					<div class="block-text-gr">
+						<p>
+							Для підтримки працездатності, комфортабельності і безпеки автомобіля необхідно його
+							своєчасне технічне обслуговування. Суть технічного обслуговування полягає в тому, щоб
+							запобігати появі серйозних несправностей, вчасно усуваючи дрібні неполадки і оновлюючи
+							важливі для роботи деталі автомобіля. Регулярне технічне обслуговування авто - це гарантія
+							безпеки, економії та довгих років життя автомобіля. ⠀ Всі послуги з технічного
+							обслуговування авто Вам готова надати наша команда професіоналів
+						</p>
+						<p>
+							Для підтримки працездатності, комфортабельності і безпеки автомобіля необхідно його
+							своєчасне технічне обслуговування. Суть технічного обслуговування полягає в тому, щоб
+							запобігати появі серйозних несправностей, вчасно усуваючи дрібні неполадки і оновлюючи
+							важливі для роботи деталі автомобіля. Регулярне технічне обслуговування авто - це гарантія
+							безпеки, економії та довгих років життя автомобіля. ⠀ Всі послуги з технічного
+							обслуговування авто Вам готова надати наша команда професіоналів
 						</p>
 					</div>
 					<div class="service3__circle block-circle">
@@ -559,23 +1033,12 @@
 					<h3 class="service3__title block-title2">DINO STAND</h3>
 					<div class="block-text-gr">
 						<p>
-							Для підтримки працездатності, комфортабельності і безпеки автомобіля необхідно його своєчасне технічне обслуговування. Суть технічного обслуговування полягає в тому, щоб запобігати появі серйозних несправностей, вчасно усуваючи дрібні неполадки і оновлюючи важливі для роботи деталі автомобіля. Регулярне технічне обслуговування авто - це гарантія безпеки, економії та довгих років життя автомобіля. ⠀ Всі послуги з технічного обслуговування авто Вам готова надати наша команда професіоналів
-						</p>
-					</div>
-					<div class="service3__circle block-circle">
-						<span></span>
-						<span></span>
-						<span></span>
-					</div>
-				</div>
-				<div class="service3__item">
-					<h3 class="service3__title block-title2">UP STAGE</h3>
-					<div class="block-text-gr">
-						<p>
-							Для підтримки працездатності, комфортабельності і безпеки автомобіля необхідно його своєчасне технічне обслуговування. Суть технічного обслуговування полягає в тому, щоб запобігати появі серйозних несправностей, вчасно усуваючи дрібні неполадки і оновлюючи важливі для роботи деталі автомобіля. Регулярне технічне обслуговування авто - це гарантія безпеки, економії та довгих років життя автомобіля. ⠀ Всі послуги з технічного обслуговування авто Вам готова надати наша команда професіоналів
-						</p>
-						<p>
-							Для підтримки працездатності, комфортабельності і безпеки автомобіля необхідно його своєчасне технічне обслуговування. Суть технічного обслуговування полягає в тому, щоб запобігати появі серйозних несправностей, вчасно усуваючи дрібні неполадки і оновлюючи важливі для роботи деталі автомобіля. Регулярне технічне обслуговування авто - це гарантія безпеки, економії та довгих років життя автомобіля. ⠀ Всі послуги з технічного обслуговування авто Вам готова надати наша команда професіоналів
+							Для підтримки працездатності, комфортабельності і безпеки автомобіля необхідно його
+							своєчасне технічне обслуговування. Суть технічного обслуговування полягає в тому, щоб
+							запобігати появі серйозних несправностей, вчасно усуваючи дрібні неполадки і оновлюючи
+							важливі для роботи деталі автомобіля. Регулярне технічне обслуговування авто - це гарантія
+							безпеки, економії та довгих років життя автомобіля. ⠀ Всі послуги з технічного
+							обслуговування авто Вам готова надати наша команда професіоналів
 						</p>
 					</div>
 					<div class="service3__circle block-circle">
@@ -588,76 +1051,79 @@
 		</section>
 	</main>
 	<footer class="footer">
-			<div class="footer__top">
-				<div class="footer__row">
-					<div class="footer__contacts">
-						<div class="footer__phone">
-							<p>PHONE</p>
-							<p>:+380933306006</p>
-							<p>:+380933306006</p>
-						</div>
-						<div class="footer__inst">
-							<p>INST</p>
-							<p>:top.dealers</p>
-							<p>:top.dealers.resale</p>
-						</div>
-						<div class="footer__location">
-							<p>LOCATION</p>
-							<p>:проспект в'ячеслава чорновола 14</p>
-						</div>
-						<div class="footer__social">
-							<a href="#">
-								<img src="images/footer/instagram.webp">
-							</a>
-							<a href="#">
-								<img src="images/footer/facebook.webp">
-							</a>
-							<a href="#">
-								<img src="images/footer/telegram.webp">
-							</a>
-							<a href="#">
-								<img src="images/footer/youtube.webp">
-							</a>
-							<a href="#">
-								<img src="images/footer/auto.webp">
-							</a>
-						</div>
+		<div class="footer__top">
+			<div class="footer__row">
+				<div class="footer__contacts">
+					<div class="footer__phone">
+						<p>PHONE</p>
+						<p>:+380933306006</p>
+						<p>:+380933306006</p>
 					</div>
-					<div class="footer__code">
+					<div class="footer__inst">
+						<p>INST</p>
+						<p>:top.dealers</p>
+						<p>:top.dealers.resale</p>
+					</div>
+					<div class="footer__location">
+						<p>LOCATION</p>
+						<p>:проспект в'ячеслава чорновола 14</p>
+					</div>
+					<div class="footer__social">
 						<a href="#">
-							<img src="images/footer/qr-code.webp">
+							<img class="inst_logotype" src="images/footer/instagram.png" alt="Instagram логотип">
+						</a>
+						<a href="#">
+							<img class="fb_logotype" src="images/footer/facebook.png" alt="Facebook логотип">
+						</a>
+						<a href="#">
+							<img class="tg_logotype" src="images/footer/telegram.png" alt="Telegram логотип">
+						</a>
+						<a href="#">
+							<img class="yb_logotype" src="images/footer/youtube.png" alt="Youtube логотип">
+						</a>
+						<a href="#">
+							<img class="at_logotype" src="images/footer/auto.webp" alt="Auto Ria логотип">
 						</a>
 					</div>
 				</div>
+				<div class="footer__code">
+					<a href="#">
+						<img src="images/footer/qr-code.webp">
+					</a>
+				</div>
 			</div>
-			<div class="footer__bottom">
-				<p>drive your passion</p>
-			</div>
+		</div>
+		<div class="footer__bottom">
+			<p>drive your passion</p>
+		</div>
 	</footer>
 
 	<div class="detailing-pop-pup pop-pup">
 		<div class="detailing-pop-pup__body">
 			<div class="detailing-pop-pup__close pop-pup-close">
-				<button type="button">
+				<button class="close-pop-pup-btn" type="button">
 					<img src="images/header/Х.webp" alt="X">
-				</button>	
+				</button>
 			</div>
 			<h2 class="detailing-pop-pup__title block-title2">DETAILING</h2>
-			<form class="detailing-pop-pup__form" action="/" method="post">
-				<label for="name">Ваше ім’я</label>
-				<input id="name" type="text" name="name" value="">
-				<label for="phone">Ваш телефон</label>
-				<input id="phone" type="tel" name="phone" value="">
-				<label for="message">Повідомлення</label>
-				<textarea name="message" id="message"></textarea>
-				<button class="block-btn detailing-pop-pup__btn" type="button">ВІДПРАВИТИ</button>
+			<form class="detailing-pop-pup__form" action="php/standart_detailing.php" method="POST">
+				<label for="user_name">Ваше ім’я</label>
+				<input id="name" type="text" name="user_name">
+				<label for="user_phone">Ваш телефон</label>
+				<input id="phone" type="tel" name="user_phone">
+				<label for="user_message">Повідомлення</label>
+				<textarea name="user_message" id="message"></textarea>
+
+				<button class="block-btn detailing-pop-pup__btn" id="detailing-pop-pup__btn"
+					type="submit">ВІДПРАВИТИ</button>
 				<div class="detailing-pop-pup__insta">
 					<img src="images/detailing/popup/instagram.webp">
 					<p>
 						Підпишіться на наш інстаграм і отримайте знижку до 20%
 					</p>
 				</div>
-				<button class="block-btn detailing-pop-pup__btn" type="button">ОТРИМАТИ ЗНИЖКУ</button>
+				<button class="block-btn detailing-pop-pup__btn" id="detailing-pop-pup__btn" type="button">ОТРИМАТИ
+					ЗНИЖКУ</button>
 			</form>
 		</div>
 	</div>
@@ -665,9 +1131,9 @@
 	<div class="price-pop-pup pop-pup">
 		<div class="price-pop-pup__body">
 			<div class="price-pop-pup__close pop-pup-close">
-				<button type="button">
+				<button class="close-pop-pup-btn" type="button">
 					<img src="images/header/Х.webp" alt="X">
-				</button>	
+				</button>
 			</div>
 			<h2 class="price-pop-pup__title block-title2">
 				PRICE
@@ -748,7 +1214,7 @@
 				</div>
 			</div>
 			<p class="price-pop-pup__text">МОТО: 7500</p>
-			<button class="block-btn price-pop-pup__btn" type="button">ЗАМОВИТИ</button>
+			<button class="block-btn price-pop-pup__btn price-order__btn" type="button">ЗАМОВИТИ</button>
 		</div>
 	</div>
 
@@ -756,7 +1222,7 @@
 		<div class="price-pop-pup-pc__body">
 			<div class="price-pop-pup-pc__top">
 				<h3 class="price-pop-pup-pc__title block-title2">PRICE</h3>
-				<button type="button">
+				<button class="close-pop-pup-btn" type="button">
 					<img src="images/header/Х.webp" alt="X">
 				</button>
 			</div>
@@ -814,7 +1280,7 @@
 				<span>15.000 ₴</span>
 			</div>
 			<div class="price-pop-pup-pc__button">
-				<button class="block-btn price-pop-pup-pc__btn" type="button">ДІЗНАТИСЬ ЦІНУ</button>
+				<button class="block-btn price-pop-pup-pc__btn price-order__btn" type="button">ЗАМОВИТИ</button>
 			</div>
 		</div>
 	</div>
@@ -824,9 +1290,9 @@
 			<div class="contucts-pop-pup__top">
 				<h2 class="contucts-pop-pup__title block-title2">КОНТАКТИ</h2>
 				<div class="contucts-pop-pup__close pop-pup-close">
-					<button type="button">
+					<button class="close-pop-pup-btn" type="button">
 						<img src="images/header/Х.webp" alt="X">
-					</button>	
+					</button>
 				</div>
 			</div>
 			<div class="contucts-pop-pup__row">
@@ -844,23 +1310,26 @@
 						ПРОСПЕКТ В’ЯЧЕСЛАВА ЧОРНОВОЛА 14
 					</p>
 				</div>
-					<div class="contucts-pop-pup__map">
-						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2572.013716902664!2d24.017764215388116!3d49.8609869793983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473adda8d4321adb%3A0x74362afe1af404a7!2z0L_RgNC-0YHQv9C10LrRgiDQkifRj9GH0LXRgdC70LDQstCwINCn0L7RgNC90L7QstC-0LvQsCwgMTQsINCb0YzQstGW0LIsINCb0YzQstGW0LLRgdGM0LrQsCDQvtCx0LvQsNGB0YLRjCwgNzkwMDA!5e0!3m2!1suk!2sua!4v1608646022486!5m2!1suk!2sua" width="240" height="221" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+				<div class="contucts-pop-pup__map">
+					<iframe
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2572.013716902664!2d24.017764215388116!3d49.8609869793983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473adda8d4321adb%3A0x74362afe1af404a7!2z0L_RgNC-0YHQv9C10LrRgiDQkifRj9GH0LXRgdC70LDQstCwINCn0L7RgNC90L7QstC-0LvQsCwgMTQsINCb0YzQstGW0LIsINCb0YzQstGW0LLRgdGM0LrQsCDQvtCx0LvQsNGB0YLRjCwgNzkwMDA!5e0!3m2!1suk!2sua!4v1608646022486!5m2!1suk!2sua"
+						width="240" height="221" frameborder="0" style="border:0;" allowfullscreen=""
+						aria-hidden="false" tabindex="0"></iframe>
 				</div>
 			</div>
-			
-			
+
+
 		</div>
 	</div>
 
-	<div class="selection-pop-pup pop-pup">
+	<div class="selection-pop-pup pop-pup" data-target="selection">
 		<div class="selection-pop-pup__body">
 			<div class="selection-pop-pup__top">
 				<h3 class="block-title2 selection-pop-pup__title">ПІДБІР</h3>
 				<div class="selection-pop-pup__close pop-pup-close">
-					<button type="button">
+					<button class="close-pop-pup-btn" type="button">
 						<img src="images/header/Х.webp" alt="X">
-					</button>	
+					</button>
 				</div>
 			</div>
 			<div class="selection-pop-pup__row">
@@ -883,13 +1352,26 @@
 				</div>
 				<div class="block-text-gr selection-pop-pup__text">
 					<p>
-						Завдяки дилерським аккаунтам та професійним менеджерам, Top Dealers виграє багато лотів за низькими цінами. Доставкою займається наша логістична компанія, яка контролює всі процеси від погрузки і до відкриття контейнера в порті. Ми не делегуємо наші повноваження нікому, а робимо все власноруч і за рахунок цього досягаємо максимально якісного результату. У нашому салоні Ви зможете отримати всі необхідні послуги підбору, доставки, розмитнення та ремонту і навіть застрахувати своє нове авто.
+						Завдяки дилерським аккаунтам та професійним менеджерам, Top Dealers виграє багато лотів за
+						низькими цінами. Доставкою займається наша логістична компанія, яка контролює всі процеси від
+						погрузки і до відкриття контейнера в порті. Ми не делегуємо наші повноваження нікому, а робимо
+						все власноруч і за рахунок цього досягаємо максимально якісного результату. У нашому салоні Ви
+						зможете отримати всі необхідні послуги підбору, доставки, розмитнення та ремонту і навіть
+						застрахувати своє нове авто.
 					</p>
 					<p>
-						Завдяки дилерським аккаунтам та професійним менеджерам, Top Dealers виграє багато лотів за низькими цінами. Доставкою займається наша логістична компанія, яка контролює всі процеси від погрузки і до відкриття контейнера в порті. Ми не делегуємо наші повноваження нікому, а робимо все власноруч і за рахунок цього досягаємо максимально якісного результату. У нашому салоні Ви зможете отримати всі необхідні послуги підбору, доставки, розмитнення та ремонту і навіть застрахувати своє нове авто.
+						Завдяки дилерським аккаунтам та професійним менеджерам, Top Dealers виграє багато лотів за
+						низькими цінами. Доставкою займається наша логістична компанія, яка контролює всі процеси від
+						погрузки і до відкриття контейнера в порті. Ми не делегуємо наші повноваження нікому, а робимо
+						все власноруч і за рахунок цього досягаємо максимально якісного результату. У нашому салоні Ви
+						зможете отримати всі необхідні послуги підбору, доставки, розмитнення та ремонту і навіть
+						застрахувати своє нове авто.
 					</p>
 					<p>
-						Завдяки дилерським аккаунтам та професійним менеджерам, Top Dealers виграє багато лотів за низькими цінами. Доставкою займається наша логістична компанія, яка контролює всі процеси від погрузки і до відкриття контейнера в порті. Ми не делегуємо наші повноваження нікому, а робимо все власноруч і за рахунок цього досягаємо максимально якісного результату.
+						Завдяки дилерським аккаунтам та професійним менеджерам, Top Dealers виграє багато лотів за
+						низькими цінами. Доставкою займається наша логістична компанія, яка контролює всі процеси від
+						погрузки і до відкриття контейнера в порті. Ми не делегуємо наші повноваження нікому, а робимо
+						все власноруч і за рахунок цього досягаємо максимально якісного результату.
 					</p>
 					<div class="selection-pop-pup__circle block-circle">
 						<span></span>
@@ -901,14 +1383,14 @@
 		</div>
 	</div>
 
-	<div class="trade-in-pop-pup pop-pup">
+	<div class="trade-in-pop-pup pop-pup" data-target="trade-in">
 		<div class="selection-pop-pup__body">
 			<div class="selection-pop-pup__top">
 				<h3 class="block-title2 selection-pop-pup__title">TRADE IN</h3>
 				<div class="selection-pop-pup__close pop-pup-close">
-					<button type="button">
+					<button class="close-pop-pup-btn" type="button">
 						<img src="images/header/Х.webp" alt="X">
-					</button>	
+					</button>
 				</div>
 			</div>
 			<div class="selection-pop-pup__row">
@@ -950,7 +1432,29 @@
 				</div>
 				<div class="block-text-gr selection-pop-pup__text">
 					<p>
-						Перевагою Trade-in є оптимізована процедура продажу та покупки автомобіля. Цей процес полягає в тому, що клієнт залишає свій старий автомобіль нам і з ціни нового транспортного засобу буде вирахувана вартість попереднього авто клієнта. Ти економиш час при продажі старого авто і катаєшся вже на новомуПеревагою Trade-in є оптимізована процедура продажу та покупки автомобіля. Цей процес полягає в тому, що клієнт залишає свій старий автомобіль нам і з ціни нового транспортного засобу буде вирахувана вартість попереднього авто клієнта. Ти економиш час при продажі старого авто і катаєшся вже на новомуПеревагою Trade-in є оптимізована процедура продажу та покупки автомобіля. Цей процес полягає в тому, що клієнт залишає свій старий автомобіль нам і з ціни нового транспортного засобу буде вирахувана вартість попереднього авто клієнта. Ти економиш час при продажі старого авто і катаєшся вже на новомуПеревагою Trade-in є оптимізована процедура продажу та покупки автомобіля. Цей процес полягає в тому, що клієнт залишає свій старий автомобіль нам і з ціни нового транспортного засобу буде вирахувана вартість попереднього авто клієнта. Ти економиш час при продажі старого авто і катаєшся вже на новомуПеревагою Trade-in є оптимізована процедура продажу та покупки автомобіля. Цей процес полягає в тому, що клієнт залишає свій старий автомобіль нам і з ціни нового транспортного засобу буде вирахувана вартість попереднього авто клієнта. Ти економиш час при продажі старого авто і катаєшся вже на новомуПеревагою Trade-in є оптимізована процедура продажу та покупки автомобіля. Цей процес полягає в тому, що клієнт залишає свій старий автомобіль нам і з ціни нового транспортного засобу буде вирахувана вартість попереднього авто клієнта. Ти економиш час при продажі старого авто і катаєшся вже на новомуПеревагою Trade-in є оптимізована процедура продажу та покупки автомобіля. Цей процес полягає в тому, що клієнт залишає свій старий автомобіль нам і з ціни нового транспортного засобу буде вирахувана вартість попереднього авто клієнта. Ти економиш час при продажі старого авто і катаєшся вже на новому
+						Перевагою Trade-in є оптимізована процедура продажу та покупки автомобіля. Цей процес полягає в
+						тому, що клієнт залишає свій старий автомобіль нам і з ціни нового транспортного засобу буде
+						вирахувана вартість попереднього авто клієнта. Ти економиш час при продажі старого авто і
+						катаєшся вже на новомуПеревагою Trade-in є оптимізована процедура продажу та покупки автомобіля.
+						Цей процес полягає в тому, що клієнт залишає свій старий автомобіль нам і з ціни нового
+						транспортного засобу буде вирахувана вартість попереднього авто клієнта. Ти економиш час при
+						продажі старого авто і катаєшся вже на новомуПеревагою Trade-in є оптимізована процедура продажу
+						та покупки автомобіля. Цей процес полягає в тому, що клієнт залишає свій старий автомобіль нам і
+						з ціни нового транспортного засобу буде вирахувана вартість попереднього авто клієнта. Ти
+						економиш час при продажі старого авто і катаєшся вже на новомуПеревагою Trade-in є оптимізована
+						процедура продажу та покупки автомобіля. Цей процес полягає в тому, що клієнт залишає свій
+						старий автомобіль нам і з ціни нового транспортного засобу буде вирахувана вартість попереднього
+						авто клієнта. Ти економиш час при продажі старого авто і катаєшся вже на новомуПеревагою
+						Trade-in є оптимізована процедура продажу та покупки автомобіля. Цей процес полягає в тому, що
+						клієнт залишає свій старий автомобіль нам і з ціни нового транспортного засобу буде вирахувана
+						вартість попереднього авто клієнта. Ти економиш час при продажі старого авто і катаєшся вже на
+						новомуПеревагою Trade-in є оптимізована процедура продажу та покупки автомобіля. Цей процес
+						полягає в тому, що клієнт залишає свій старий автомобіль нам і з ціни нового транспортного
+						засобу буде вирахувана вартість попереднього авто клієнта. Ти економиш час при продажі старого
+						авто і катаєшся вже на новомуПеревагою Trade-in є оптимізована процедура продажу та покупки
+						автомобіля. Цей процес полягає в тому, що клієнт залишає свій старий автомобіль нам і з ціни
+						нового транспортного засобу буде вирахувана вартість попереднього авто клієнта. Ти економиш час
+						при продажі старого авто і катаєшся вже на новому
 					</p>
 					<div class="selection-pop-pup__circle block-circle">
 						<span></span>
@@ -962,14 +1466,14 @@
 		</div>
 	</div>
 
-	<div class="auto-redemption-pop-pup pop-pup">
+	<div class="auto-redemption-pop-pup pop-pup" data-target="auto-redemption">
 		<div class="selection-pop-pup__body">
 			<div class="selection-pop-pup__top">
 				<h3 class="block-title2 selection-pop-pup__title">АВТОВИКУП</h3>
 				<div class="selection-pop-pup__close pop-pup-close">
-					<button type="button">
+					<button class="close-pop-pup-btn" type="button">
 						<img src="images/header/Х.webp" alt="X">
-					</button>	
+					</button>
 				</div>
 			</div>
 			<div class="selection-pop-pup__row">
@@ -999,7 +1503,27 @@
 				</div>
 				<div class="block-text-gr selection-pop-pup__text">
 					<p>
-						Перевагою Trade-in є оптимізована процедура продажу та покупки автомобіля. Цей процес полягає в тому, що клієнт залишає свій старий автомобіль нам і з ціни нового транспортного засобу буде вирахувана вартість попереднього авто клієнта. Ти економиш час при продажі старого авто і катаєшся вже на новомуПеревагою Trade-in є оптимізована процедура продажу та покупки автомобіля. Цей процес полягає в тому, що клієнт залишає свій старий автомобіль нам і з ціни нового транспортного засобу буде вирахувана вартість попереднього авто клієнта. Ти економиш час при продажі старого авто і катаєшся вже на новомуПеревагою Trade-in є оптимізована процедура продажу та покупки автомобіля. Цей процес полягає в тому, що клієнт залишає свій старий автомобіль нам і з ціни нового транспортного засобу буде вирахувана вартість попереднього авто клієнта. Ти економиш час при продажі старого авто і катаєшся вже на новомуПеревагою Trade-in є оптимізована процедура продажу та покупки автомобіля. Цей процес полягає в тому, що клієнт залишає свій старий автомобіль нам і з ціни нового транспортного засобу буде вирахувана вартість попереднього авто клієнта. Ти економиш час при продажі старого авто і катаєшся вже на новомуПеревагою Trade-in є оптимізована процедура продажу та покупки автомобіля. Цей процес полягає в тому, що клієнт залишає свій старий автомобіль нам і з ціни нового транспортного засобу буде вирахувана вартість попереднього авто клієнта. Ти економиш час при продажі старого авто і катаєшся вже на новомуПеревагою Trade-in є оптимізована процедура продажу та покупки автомобіля. Цей процес полягає в тому, що клієнт залишає свій старий автомобіль нам і з ціни нового транспортного засобу буде вирахувана вартість попереднього авто клієнта. Ти економиш час при продажі старого авто і катаєшся вже на новомуПеревагою Trade-in є оптимізована процедура продажу та покупки автомобіля. Цей процес полягає в тому, що клієнт залишає свій старий автомобіль нам і з ціни нового транспортного засобу буде вирахувана вартість попереднього авто клієнта. Ти економиш час при продажі старого авто і катаєшся вже на новому
+						Щоб продати свою машину швидко, при цьому не напружуючись, не витрачаючи часу, не витрачаючи ні
+						копійки на приведення її в товарний вигляд - просто зверніться до нас. Ми також допомагаємо
+						переоформити автомобіль при продажу. Легально усуваємо труднощі на кшталт Ви нічим не ризикуєте
+						з нами. Вам спочатку оголошують вартість, і очевидно, що якщо вас вона не влаштує ніхто
+						продавати вас не змусить. Залишитися без грошей теж проблематично. Затримок немає ніяких, ви
+						отримуєте всю суму цілком, моментально після оформленні документів. Якщо необхідно, то можемо
+						розрахуватися і в валюті, лише попередьте про необхідність попередньо.Щоб продати свою машину
+						швидко, при цьому не напружуючись, не витрачаючи часу, не витрачаючи ні копійки на приведення її
+						в товарний вигляд - просто зверніться до нас. Ми також допомагаємо переоформити автомобіль при
+						продажу. Легально усуваємо труднощі на кшталт Ви нічим не ризикуєте з нами. Вам спочатку
+						оголошують вартість, і очевидно, що якщо вас вона не влаштує ніхто продавати вас не змусить.
+						Залишитися без грошей теж проблематично. Затримок немає ніяких, ви отримуєте всю суму цілком,
+						моментально після оформленні документів. Якщо необхідно, то можемо розрахуватися і в валюті,
+						лише попередьте про необхідність попередньо.Щоб продати свою машину швидко, при цьому не
+						напружуючись, не витрачаючи часу, не витрачаючи ні копійки на приведення її в товарний вигляд -
+						просто зверніться до нас. Ми також допомагаємо переоформити автомобіль при продажу. Легально
+						усуваємо труднощі на кшталт Ви нічим не ризикуєте з нами. Вам спочатку оголошують вартість, і
+						очевидно, що якщо вас вона не влаштує ніхто продавати вас не змусить. Залишитися без грошей теж
+						проблематично. Затримок немає ніяких, ви отримуєте всю суму цілком, моментально після оформленні
+						документів. Якщо необхідно, то можемо розрахуватися і в валюті, лише попередьте про необхідність
+						попередньо.
 					</p>
 					<div class="selection-pop-pup__circle block-circle">
 						<span></span>
@@ -1011,19 +1535,19 @@
 		</div>
 	</div>
 
-	<div class="standart-pop-pup pop-pup">
+	<div class="standart-pop-pup pop-pup" data-target="standart">
 		<div class="standart-pop-pup__body">
 			<div class="standart-pop-pup__top">
 				<div class="standart-pop-pup__close pop-pup-close">
-					<button type="button">
+					<button class="close-pop-pup-btn" type="button">
 						<img src="images/header/Х.webp" alt="X">
-					</button>	
+					</button>
 				</div>
 				<h3 class="block-title2 standart-pop-pup__title">STANDART</h3>
 			</div>
 			<div class="standart-pop-pup__row">
 				<div class="standart-pop-pup__form">
-					<form action="" method="post">
+					<form action="#" method="post">
 						<p>
 							<label for="st-name">ВАШЕ ІМ’Я:</label>
 							<input id="st-name" type="text" name="name" value="">
@@ -1062,10 +1586,11 @@
 						Екстер`єр:<br>
 						Базова мийка авто<br>
 						Миття дисків без зняття спецзасобом<br>
-						3-и фазне  полірування  кузова автомобіля<br>
+						3-и фазне полірування кузова автомобіля<br>
 						Полірування оптики авто зад\перед<br>
 						Полірування під ручками<br>
-						Чистка від полірувальної пасти: шилдиків, парктроніків, резинових ущільнювачів, декоративних надписів, декоративних вставок, молдингів, дзеркал заднього виду, решіток
+						Чистка від полірувальної пасти: шилдиків, парктроніків, резинових ущільнювачів, декоративних
+						надписів, декоративних вставок, молдингів, дзеркал заднього виду, решіток
 					</p>
 					<p>
 						Інтерєр:<br>
@@ -1090,19 +1615,19 @@
 		</div>
 	</div>
 
-	<div class="premium-pop-pup pop-pup">
+	<div class="premium-pop-pup pop-pup" data-target="premium">
 		<div class="standart-pop-pup__body">
 			<div class="standart-pop-pup__top">
 				<div class="standart-pop-pup__close pop-pup-close">
-					<button type="button">
+					<button class="close-pop-pup-btn" type="button">
 						<img src="images/header/Х.webp" alt="X">
-					</button>	
+					</button>
 				</div>
 				<h3 class="block-title2 standart-pop-pup__title">PREMIUM</h3>
 			</div>
 			<div class="standart-pop-pup__row">
 				<div class="standart-pop-pup__form">
-					<form action="" method="post">
+					<form action="#" method="post">
 						<p>
 							<label for="pr-name">ВАШЕ ІМ’Я:</label>
 							<input id="pr-name" type="text" name="name" value="">
@@ -1141,10 +1666,11 @@
 						Екстер`єр:<br>
 						Базова мийка авто<br>
 						Миття дисків без зняття спецзасобом<br>
-						3-и фазне  полірування  кузова автомобіля<br>
+						3-и фазне полірування кузова автомобіля<br>
 						Полірування оптики авто зад\перед<br>
 						Полірування під ручками<br>
-						Чистка від полірувальної пасти: шилдиків, парктроніків, резинових ущільнювачів, декоративних надписів, декоративних вставок, молдингів, дзеркал заднього виду, решіток
+						Чистка від полірувальної пасти: шилдиків, парктроніків, резинових ущільнювачів, декоративних
+						надписів, декоративних вставок, молдингів, дзеркал заднього виду, решіток
 					</p>
 					<p>
 						Інтерєр:<br>
@@ -1169,19 +1695,19 @@
 		</div>
 	</div>
 
-	<div class="platinum-pop-pup pop-pup">
+	<div class="platinum-pop-pup pop-pup" data-target="planium">
 		<div class="standart-pop-pup__body">
 			<div class="standart-pop-pup__top">
 				<div class="standart-pop-pup__close pop-pup-close">
-					<button type="button">
+					<button class="close-pop-pup-btn" type="button">
 						<img src="images/header/Х.webp" alt="X">
-					</button>	
+					</button>
 				</div>
 				<h3 class="block-title2 standart-pop-pup__title">PLATINUM</h3>
 			</div>
 			<div class="standart-pop-pup__row">
 				<div class="standart-pop-pup__form">
-					<form action="" method="post">
+					<form action="#" method="post">
 						<p>
 							<label for="pl-name">ВАШЕ ІМ’Я:</label>
 							<input id="pl-name" type="text" name="name" value="">
@@ -1220,10 +1746,11 @@
 						Екстер`єр:<br>
 						Базова мийка авто<br>
 						Миття дисків без зняття спецзасобом<br>
-						3-и фазне  полірування  кузова автомобіля<br>
+						3-и фазне полірування кузова автомобіля<br>
 						Полірування оптики авто зад\перед<br>
 						Полірування під ручками<br>
-						Чистка від полірувальної пасти: шилдиків, парктроніків, резинових ущільнювачів, декоративних надписів, декоративних вставок, молдингів, дзеркал заднього виду, решіток
+						Чистка від полірувальної пасти: шилдиків, парктроніків, резинових ущільнювачів, декоративних
+						надписів, декоративних вставок, молдингів, дзеркал заднього виду, решіток
 					</p>
 					<p>
 						Інтерєр:<br>
@@ -1248,7 +1775,14 @@
 		</div>
 	</div>
 
+	<!-- <script 
+		src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+		integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" 
+		crossorigin="anonymous">
+	</script> -->
 	<script src="js/swiper.min.js"></script>
+	<script src="js/popup.js"></script>
 	<script src="js/main.js"></script>
 </body>
+
 </html>
